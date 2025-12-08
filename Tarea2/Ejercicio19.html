@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 19 - Float</title>
+  <style>
+    .img-left {
+      float: left;
+      margin: 0 15px 10px 0; 
+      width: 150px; 
+    }
+    .img-right {
+      float: right;
+      margin: 0 0 10px 15px; 
+      width: 150px; 
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="clearfix">
+    <img src="portatil.png" alt="Imagen izquierda" class="img-left">
+    <p>
+      Este es un párrafo de ejemplo que acompaña a la imagen flotada a la izquierda. El texto debería envolver la imagen, y el margen aplicado evita que el texto quede demasiado pegado a la imagen. Puedes escribir aquí varias líneas de texto para ver cómo fluye alrededor de la imagen.
+    </p>
+  </div>
+
+  <div class="clearfix" style="margin-top: 50px;">
+    <img src="portatil.png" alt="Imagen derecha" class="img-right">
+    <p>
+      Este segundo párrafo acompaña a la imagen flotada a la derecha. De nuevo, el texto se ajusta automáticamente al espacio libre a la izquierda de la imagen, gracias al uso de <code>float: right</code>. Puedes añadir contenido suficiente para observar cómo el texto envuelve la imagen desde el lado contrario.
+    </p>
+  </div>
+
+</body>
+</html>

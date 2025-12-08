@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML tags with examples and code snippets.">
+    <title>Web4U - HTML Examples</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .example-link { color: #2980b9; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML5 Examples</h1>
+    </header>
+
+    <nav>
+        <a href="index.html" title="Go to Homepage">Home</a>
+        <a href="html.html" class="active" title="You are currently on the HTML page">HTML</a>
+        <a href="css.html" title="Learn about CSS properties">CSS</a>
+        <a href="svg.html" title="Learn about SVG graphics">SVG</a>
+        <a href="es/html.html" title="Cambiar a Español" style="float: right;">🇪🇸 ES</a>
+    </nav>
+
+    <div class="container">
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#headings" title="Jump to Headings section">1. Headings</a></li>
+            <li><a href="#paragraph" title="Jump to Paragraph section">2. Paragraph</a></li>
+            <li><a href="#anchor" title="Jump to Links section">3. Anchor (Link)</a></li>
+            <li><a href="#image" title="Jump to Images section">4. Image</a></li>
+            <li><a href="#list" title="Jump to Lists section">5. Unordered List</a></li>
+        </ul>
+        <hr>
+
+        <article id="headings">
+            <h3>1. The Heading Tag (&lt;h1&gt; to &lt;h6&gt;)</h3>
+            <p><strong>Use Case:</strong> Used to define headings. <code>&lt;h1&gt;</code> is the most important.</p>
+            
+            <p><strong>Code Example:</strong></p>
+            <code>
+<pre>
+&lt;h1&gt;This is a Main Heading&lt;/h1&gt;
+&lt;h2&gt;This is a Subheading&lt;/h2&gt;
+</pre>
+            </code>
+
+            <p><strong>Result:</strong></p>
+            <h1>This is a Main Heading</h1>
+            <h2>This is a Subheading</h2>
+            <p><strong>More Info:</strong> <a href="https://www.w3schools.com/html/html_headings.asp" target="_blank" title="Open W3C Headings docs in new tab">W3C Headings</a></p>
+        </article>
+
+        <hr>
+
+        <article id="paragraph">
+            <h3>2. The Paragraph Tag (&lt;p&gt;)</h3>
+            <p><strong>Use Case:</strong> Defines a block of text.</p>
+            <code>
+<pre>
+&lt;p&gt;This is a paragraph showing text content.&lt;/p&gt;
+</pre>
+            </code>
+            <p><strong>Result:</strong></p>
+            <p>This is a paragraph showing text content.</p>
+            <p><strong>More Info:</strong> <a href="https://www.w3schools.com/tags/tag_p.asp" target="_blank" title="Open W3C Paragraph docs">W3C Paragraph</a></p>
+        </article>
+        
+        <hr>
+
+        <article id="anchor">
+            <h3>3. The Anchor Tag (&lt;a&gt;)</h3>
+            <p><strong>Use Case:</strong> Creates a hyperlink to link to other pages or resources.</p>
+            <code>
+<pre>
+&lt;a href="index.html" title="Go back to the homepage"&gt;Go Home&lt;/a&gt;
+</pre>
+            </code>
+            <p><strong>Result:</strong></p>
+            <a href="index.html" class="example-link">Go Home</a>
+            <p><strong>More Info:</strong> <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank" title="Open W3C Anchor docs">W3C Anchor</a></p>
+        </article>
+
+        <hr>
+
+        <article id="image">
+            <h3>4. The Image Tag (&lt;img&gt;)</h3>
+            <p><strong>Use Case:</strong> Embeds an image into the document. Requires <code>src</code> (source) and <code>alt</code> (alternative text).</p>
+            <code>
+<pre>
+&lt;img src="img/logo_html.png" alt="HTML Logo" width="50"&gt;
+</pre>
+            </code>
+            <p><strong>Result:</strong></p>
+            <img src="img/logo_html.png" alt="HTML Logo" width="50">
+            <p><strong>More Info:</strong> <a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank" title="Open W3C Image docs">W3C Image</a></p>
+        </article>
+        
+        <hr>
+
+        <article id="list">
+            <h3>5. The Unordered List Tag (&lt;ul&gt; and &lt;li&gt;)</h3>
+            <p><strong>Use Case:</strong> Creates a list of items, typically rendered as bullet points.</p>
+            <code>
+<pre>
+&lt;ul&gt;
+  &lt;li&gt;Item One&lt;/li&gt;
+  &lt;li&gt;Item Two&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+            </code>
+            <p><strong>Result:</strong></p>
+            <ul>
+              <li>Item One</li>
+              <li>Item Two</li>
+            </ul>
+            <p><strong>More Info:</strong> <a href="https://www.w3schools.com/tags/tag_ul.asp" target="_blank" title="Open W3C List docs">W3C List</a></p>
+        </article>
+
+        <hr>
+        
+        <h3>Download Content</h3>
+        <p>Get the offline version of this tutorial:</p>
+        <a href="pdf/html_content.pdf" class="pdf-link" title="Download the PDF version of this page (Non-HTML file)">
+            📄 Download HTML Guide (PDF)
+        </a>
+    </div>
+
+</body>
+</html>

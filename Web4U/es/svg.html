@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende etiquetas SVG para gráficos vectoriales escalables con ejemplos.">
+    <title>Web4U - Ejemplos SVG</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ejemplos de SVG</h1>
+    </header>
+
+    <nav>
+        <a href="index.html" title="Ir a la página principal">Inicio</a>
+        <a href="html.html" title="Aprende sobre etiquetas HTML">HTML</a>
+        <a href="css.html" title="Aprende sobre propiedades CSS">CSS</a>
+        <a href="svg.html" class="active" title="Estás en la página de SVG">SVG</a>
+        <a href="../svg.html" title="Change to English" style="float: right;">🇬🇧 EN</a>
+    </nav>
+
+    <div class="container">
+        <h3>Tabla de Contenidos</h3>
+        <ul>
+            <li><a href="#rect" title="Saltar a la etiqueta Rectángulo">1. &lt;rect&gt;</a></li>
+            <li><a href="#circle" title="Saltar a la etiqueta Círculo">2. &lt;circle&gt;</a></li>
+            <li><a href="#line" title="Saltar a la etiqueta Línea">3. &lt;line&gt;</a></li>
+            <li><a href="#text" title="Saltar a la etiqueta Texto">4. &lt;text&gt;</a></li>
+            <li><a href="#path" title="Saltar a la etiqueta Ruta">5. &lt;path&gt;</a></li>
+        </ul>
+        <hr>
+
+        <article id="rect">
+            <h3>1. Etiqueta Rectángulo (&lt;rect&gt;)</h3>
+            <p><strong>Caso de Uso:</strong> Se utiliza para crear una forma de rectángulo o cuadrado.</p>
+            
+            <p><strong>Ejemplo de Código:</strong></p>
+            <code>
+<pre>
+&lt;svg width="150" height="100"&gt;
+  &lt;rect width="100" height="80" x="25" y="10" 
+        style="fill:blue; stroke:red; stroke-width:3" /&gt;
+&lt;/svg&gt;
+</pre>
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <svg width="150" height="100">
+                <rect width="100" height="80" x="25" y="10" 
+                    style="fill:blue; stroke:red; stroke-width:3" />
+            </svg>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/graphics/svg_rect.asp" target="_blank" title="Abrir documentación W3C de SVG rect">W3C &lt;rect&gt;</a></p>
+        </article>
+
+        <hr>
+
+        <article id="circle">
+            <h3>2. Etiqueta Círculo (&lt;circle&gt;)</h3>
+            <p><strong>Caso de Uso:</strong> Se utiliza para crear una forma circular basada en un punto central y un radio.</p>
+            <code>
+<pre>
+&lt;svg width="150" height="100"&gt;
+  &lt;circle cx="75" cy="50" r="40" 
+          stroke="green" stroke-width="4" fill="yellow" /&gt;
+&lt;/svg&gt;
+</pre>
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <svg width="150" height="100">
+                <circle cx="75" cy="50" r="40" 
+                    stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/graphics/svg_circle.asp" target="_blank" title="Abrir documentación W3C de SVG circle">W3C &lt;circle&gt;</a></p>
+        </article>
+
+        <hr>
+
+        <article id="line">
+            <h3>3. Etiqueta Línea (&lt;line&gt;)</h3>
+            <p><strong>Caso de Uso:</strong> Se utiliza para dibujar una línea recta entre dos puntos.</p>
+            <code>
+<pre>
+&lt;svg width="150" height="100"&gt;
+  &lt;line x1="10" y1="10" x2="140" y2="90" 
+        style="stroke:rgb(255,0,0); stroke-width:2" /&gt;
+&lt;/svg&gt;
+</pre>
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <svg width="150" height="100">
+                <line x1="10" y1="10" x2="140" y2="90" 
+                    style="stroke:rgb(255,0,0); stroke-width:2" />
+            </svg>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/graphics/svg_line.asp" target="_blank" title="Abrir documentación W3C de SVG line">W3C &lt;line&gt;</a></p>
+        </article>
+
+        <hr>
+
+        <article id="text">
+            <h3>4. Etiqueta Texto (&lt;text&gt;)</h3>
+            <p><strong>Caso de Uso:</strong> Se utiliza para dibujar texto dentro del gráfico SVG.</p>
+            <code>
+<pre>
+&lt;svg width="200" height="50"&gt;
+  &lt;text x="10" y="30" fill="purple" 
+        font-size="20"&gt;Hola SVG&lt;/text&gt;
+&lt;/svg&gt;
+</pre>
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <svg width="200" height="50">
+                <text x="10" y="30" fill="purple" 
+                    font-size="20">Hola SVG</text>
+            </svg>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/graphics/svg_text.asp" target="_blank" title="Abrir documentación W3C de SVG text">W3C &lt;text&gt;</a></p>
+        </article>
+
+        <hr>
+
+        <article id="path">
+            <h3>5. Etiqueta Ruta (&lt;path&gt;)</h3>
+            <p><strong>Caso de Uso:</strong> Se utiliza para definir formas complejas usando líneas y curvas arbitrarias. Es el elemento más potente.</p>
+            <code>
+<pre>
+&lt;svg width="150" height="100"&gt;
+  &lt;path d="M 20 20 L 100 20 L 60 80 Z" 
+        stroke="black" fill="red" stroke-width="2"/&gt;
+&lt;/svg&gt;
+</pre>
+            </code>
+            <p><strong>Resultado (Ejemplo de un triángulo simple):</strong></p>
+            <svg width="150" height="100">
+                <path d="M 20 20 L 100 20 L 60 80 Z" 
+                    stroke="black" fill="red" stroke-width="2"/>
+            </svg>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/graphics/svg_path.asp" target="_blank" title="Abrir documentación W3C de SVG path">W3C &lt;path&gt;</a></p>
+        </article>
+
+        <hr>
+        
+        <h3>Descargar Contenido</h3>
+        <p>Obtén la versión sin conexión de este tutorial:</p>
+        <a href="../pdf/svg_content.pdf" class="pdf-link" title="Descargar la versión PDF de esta página (Archivo No-HTML)">
+            📄 Descargar Guía SVG (PDF)
+        </a>
+    </div>
+</body>
+</html>

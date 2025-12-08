@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn SVG tags for scalable vector graphics with examples.">
+    <title>Web4U - SVG Examples</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SVG Examples</h1>
+    </header>
+
+    <nav>
+        <a href="index.html" title="Go to Homepage">Home</a>
+        <a href="html.html" title="Learn about HTML tags">HTML</a>
+        <a href="css.html" title="Learn about CSS properties">CSS</a>
+        <a href="svg.html" class="active" title="You are currently on the SVG page">SVG</a>
+        <a href="es/svg.html" title="Cambiar a Español" style="float: right;">🇪🇸 ES</a>
+    </nav>
+
+    <div class="container">
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#rect" title="Jump to Rectangle tag">1. &lt;rect&gt;</a></li>
+            <li><a href="#circle" title="Jump to Circle tag">2. &lt;circle&gt;</a></li>
+            <li><a href="#line" title="Jump to Line tag">3. &lt;line&gt;</a></li>
+            <li><a href="#text" title="Jump to Text tag">4. &lt;text&gt;</a></li>
+            <li><a href="#path" title="Jump to Path tag">5. &lt;path&gt;</a></li>
+        </ul>
+        <hr>
+
+        <article id="rect">
+            <h3>1. The Rectangle Tag (&lt;rect&gt;)</h3>
+            <p><strong>Use Case:</strong> Used to create a rectangle or square shape.</p>
+            
+            <p><strong>Code Example:</strong></p>
+            <code>
+<pre>
+&lt;svg width="150" height="100"&gt;
+  &lt;rect width="100" height="80" x="25" y="10" 
+        style="fill:blue; stroke:red; stroke-width:3" /&gt;
+&lt;/svg&gt;
+</pre>
+            </code>
+            <p><strong>Result:</strong></p>
+            <svg width="150" height="100">
+                <rect width="100" height="80" x="25" y="10" 
+                    style="fill:blue; stroke:red; stroke-width:3" />
+            </svg>
+            <p><strong>More Info:</strong> <a href="https://www.w3schools.com/graphics/svg_rect.asp" target="_blank" title="Open W3C SVG rect documentation">W3C &lt;rect&gt;</a></p>
+        </article>
+
+        <hr>
+
+        <article id="circle">
+            <h3>2. The Circle Tag (&lt;circle&gt;)</h3>
+            <p><strong>Use Case:</strong> Used to create a circular shape based on a central point and radius.</p>
+            <code>
+<pre>
+&lt;svg width="150" height="100"&gt;
+  &lt;circle cx="75" cy="50" r="40" 
+          stroke="green" stroke-width="4" fill="yellow" /&gt;
+&lt;/svg&gt;
+</pre>
+            </code>
+            <p><strong>Result:</strong></p>
+            <svg width="150" height="100">
+                <circle cx="75" cy="50" r="40" 
+                    stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
+            <p><strong>More Info:</strong> <a href="https://www.w3schools.com/graphics/svg_circle.asp" target="_blank" title="Open W3C SVG circle documentation">W3C &lt;circle&gt;</a></p>
+        </article>
+
+        <hr>
+
+        <article id="line">
+            <h3>3. The Line Tag (&lt;line&gt;)</h3>
+            <p><strong>Use Case:</strong> Used to draw a straight line between two points.</p>
+            <code>
+<pre>
+&lt;svg width="150" height="100"&gt;
+  &lt;line x1="10" y1="10" x2="140" y2="90" 
+        style="stroke:rgb(255,0,0); stroke-width:2" /&gt;
+&lt;/svg&gt;
+</pre>
+            </code>
+            <p><strong>Result:</strong></p>
+            <svg width="150" height="100">
+                <line x1="10" y1="10" x2="140" y2="90" 
+                    style="stroke:rgb(255,0,0); stroke-width:2" />
+            </svg>
+            <p><strong>More Info:</strong> <a href="https://www.w3schools.com/graphics/svg_line.asp" target="_blank" title="Open W3C SVG line documentation">W3C &lt;line&gt;</a></p>
+        </article>
+
+        <hr>
+
+        <article id="text">
+            <h3>4. The Text Tag (&lt;text&gt;)</h3>
+            <p><strong>Use Case:</strong> Used to draw text within the SVG graphic.</p>
+            <code>
+<pre>
+&lt;svg width="200" height="50"&gt;
+  &lt;text x="10" y="30" fill="purple" 
+        font-size="20"&gt;Hello SVG&lt;/text&gt;
+&lt;/svg&gt;
+</pre>
+            </code>
+            <p><strong>Result:</strong></p>
+            <svg width="200" height="50">
+                <text x="10" y="30" fill="purple" 
+                    font-size="20">Hello SVG</text>
+            </svg>
+
+            <p><strong>More Info:</strong> <a href="https://www.w3schools.com/graphics/svg_text.asp" target="_blank" title="Open W3C SVG text documentation">W3C &lt;text&gt;</a></p>
+        </article>
+
+        <hr>
+
+        <article id="path">
+            <h3>5. The Path Tag (&lt;path&gt;)</h3>
+            <p><strong>Use Case:</strong> Used to define complex shapes using arbitrary lines and curves. It's the most powerful element.</p>
+            <code>
+<pre>
+&lt;svg width="150" height="100"&gt;
+  &lt;path d="M 20 20 L 100 20 L 60 80 Z" 
+        stroke="black" fill="red" stroke-width="2"/&gt;
+&lt;/svg&gt;
+</pre>
+            </code>
+            <p><strong>Result (Example of a simple triangle):</strong></p>
+            <svg width="150" height="100">
+                <path d="M 20 20 L 100 20 L 60 80 Z" 
+                    stroke="black" fill="red" stroke-width="2"/>
+            </svg>
+            <p><strong>More Info:</strong> <a href="https://www.w3schools.com/graphics/svg_path.asp" target="_blank" title="Open W3C SVG path documentation">W3C &lt;path&gt;</a></p>
+        </article>
+
+        <hr>
+        
+        <h3>Download Content</h3>
+        <p>Get the offline version of this tutorial:</p>
+        <a href="pdf/svg_content.pdf" class="pdf-link" title="Download the PDF version of this page (Non-HTML file)">
+            📄 Download SVG Guide (PDF)
+        </a>
+    </div>
+</body>
+</html>

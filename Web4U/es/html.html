@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende etiquetas HTML con ejemplos y fragmentos de código.">
+    <title>Web4U - Ejemplos HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+
+        .example-link { color: #2980b9; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ejemplos de HTML5</h1>
+    </header>
+
+    <nav>
+        <a href="index.html" title="Ir a la página principal">Inicio</a>
+        <a href="html.html" class="active" title="Estás en la página de HTML">HTML</a>
+        <a href="css.html" title="Aprende sobre propiedades CSS">CSS</a>
+        <a href="svg.html" title="Aprende sobre gráficos SVG">SVG</a>
+        <a href="../html.html" title="Change to English" style="float: right;">🇬🇧 EN</a>
+    </nav>
+
+    <div class="container">
+        <h3>Tabla de Contenidos</h3>
+        <ul>
+            <li><a href="#headings" title="Saltar a la sección de Encabezados">1. Encabezados</a></li>
+            <li><a href="#paragraph" title="Saltar a la sección de Párrafos">2. Párrafo</a></li>
+            <li><a href="#anchor" title="Saltar a la sección de Enlaces">3. Etiqueta Ancla (Enlace)</a></li>
+            <li><a href="#image" title="Saltar a la sección de Imágenes">4. Imagen</a></li>
+            <li><a href="#list" title="Saltar a la sección de Listas">5. Lista Desordenada</a></li>
+        </ul>
+        <hr>
+
+        <article id="headings">
+            <h3>1. Etiqueta de Encabezado (&lt;h1&gt; a &lt;h6&gt;)</h3>
+            <p><strong>Caso de Uso:</strong> Se utiliza para definir encabezados. <code>&lt;h1&gt;</code> es el más importante.</p>
+            
+            <p><strong>Ejemplo de Código:</strong></p>
+            <code>
+<pre>
+&lt;h1&gt;Este es un Encabezado Principal&lt;/h1&gt;
+&lt;h2&gt;Este es un Subtítulo&lt;/h2&gt;
+</pre>
+            </code>
+
+            <p><strong>Resultado:</strong></p>
+            <h1>Este es un Encabezado Principal</h1>
+            <h2>Este es un Subtítulo</h2>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/html/html_headings.asp" target="_blank" title="Abrir documentación W3C de Encabezados">W3C Encabezados</a></p>
+        </article>
+
+        <hr>
+
+        <article id="paragraph">
+            <h3>2. Etiqueta de Párrafo (&lt;p&gt;)</h3>
+            <p><strong>Caso de Uso:</strong> Define un bloque de texto.</p>
+            <code>
+<pre>
+&lt;p&gt;Este es un párrafo que muestra contenido de texto.&lt;/p&gt;
+</pre>
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <p>Este es un párrafo que muestra contenido de texto.</p>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/tags/tag_p.asp" target="_blank" title="Abrir documentación W3C de Párrafos">W3C Párrafo</a></p>
+        </article>
+        
+        <hr>
+
+        <article id="anchor">
+            <h3>3. Etiqueta Ancla (&lt;a&gt;)</h3>
+            <p><strong>Caso de Uso:</strong> Crea un hipervínculo para enlazar a otras páginas o recursos.</p>
+            <code>
+<pre>
+&lt;a href="index.html" title="Volver a la página principal"&gt;Ir a Inicio&lt;/a&gt;
+</pre>
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <a href="index.html" class="example-link">Ir a Inicio</a>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank" title="Abrir documentación W3C de Anclas">W3C Ancla</a></p>
+        </article>
+
+        <hr>
+
+        <article id="image">
+            <h3>4. Etiqueta Imagen (&lt;img&gt;)</h3>
+            <p><strong>Caso de Uso:</strong> Incrusta una imagen en el documento. Requiere <code>src</code> (origen) y <code>alt</code> (texto alternativo).</p>
+            <code>
+<pre>
+&lt;img src="../img/logo_html.png" alt="Logotipo HTML" width="50"&gt;
+</pre>
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <img src="../img/logo_html.png" alt="Logotipo HTML" width="50">
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank" title="Abrir documentación W3C de Imágenes">W3C Imagen</a></p>
+        </article>
+        
+        <hr>
+
+        <article id="list">
+            <h3>5. Etiqueta Lista Desordenada (&lt;ul&gt; y &lt;li&gt;)</h3>
+            <p><strong>Caso de Uso:</strong> Crea una lista de elementos, normalmente mostrados con puntos o viñetas.</p>
+            <code>
+<pre>
+&lt;ul&gt;
+  &lt;li&gt;Elemento Uno&lt;/li&gt;
+  &lt;li&gt;Elemento Dos&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <ul>
+              <li>Elemento Uno</li>
+              <li>Elemento Dos</li>
+            </ul>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/tags/tag_ul.asp" target="_blank" title="Abrir documentación W3C de Listas">W3C Lista</a></p>
+        </article>
+
+        <hr>
+        
+        <h3>Descargar Contenido</h3>
+        <p>Obtén la versión sin conexión de este tutorial:</p>
+        <a href="../pdf/html_content.pdf" class="pdf-link" title="Descargar la versión PDF de esta página (Archivo No-HTML)">
+            📄 Descargar Guía HTML (PDF)
+        </a>
+    </div>
+
+</body>
+</html>

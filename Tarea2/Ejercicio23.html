@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 23 - iFrame</title>
+  <style>
+    ul.menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    ul.menu li {
+      float: left;
+    }
+
+    ul.menu li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    ul.menu li a:hover {
+      background-color: #555;
+    }
+
+    iframe {
+      width: 90%;
+      height: 500px;
+      border: 1px solid black;
+      margin: 20px auto;
+      display: block;
+    }
+
+    ul.menu::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="menu">
+    <li><a href="https://es.wikipedia.org/wiki/HTML" target="contenido">HTML</a></li>
+    <li><a href="https://es.wikipedia.org/wiki/CSS" target="contenido">CSS</a></li>
+    <li><a href="https://es.wikipedia.org/wiki/JavaScript" target="contenido">JavaScript</a></li>
+    <li><a href="https://es.wikipedia.org/wiki/AJAX" target="contenido">Ajax</a></li>
+  </ul>
+
+  <iframe name="contenido" src="https://es.wikipedia.org/wiki/HTML"></iframe>
+
+</body>
+</html>
