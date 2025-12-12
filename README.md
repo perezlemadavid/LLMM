@@ -4,7 +4,7 @@ Este repositorio incluye actividades llevadas a cabo en el módulo Lenguajes de 
 
 ---
 
-## 🎯 Índice de Tareas y Proyectos
+##  Índice de Tareas y Proyectos
 
 | Tarea/Proyecto | Enlace |
 | :---: | :---: |
