@@ -1,0 +1,131 @@
+/* ===== ESTILO GENERAL ===== */
+
+body {
+  background-color: #0f1f0f;
+  color: #33ff33;
+  font-family: 'Share Tech Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+  border-bottom: 2px solid #33ff33;
+}
+
+/* ===== TÍTULOS ===== */
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ===== EFECTO GLOW EN TÍTULO PRINCIPAL ===== */
+
+.titulo {
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #33ff33;
+  }
+  to {
+    text-shadow: 0 0 20px #00ff00;
+  }
+}
+
+/* ===== IMÁGENES ===== */
+
+img {
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== BOTONES PERSONALIZADOS ===== */
+
+.btn-warning {
+  background-color: #33ff33;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+
+.btn-warning:hover {
+  background-color: #00cc00;
+  color: black;
+}
+
+/* ===== TABLA ===== */
+
+.table {
+  border: 1px solid #33ff33;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(51, 255, 51, 0.1);
+}
+
+/* ===== FORMULARIO ===== */
+
+.form-control {
+  background-color: #132e13;
+  border: 1px solid #33ff33;
+  color: #33ff33;
+}
+
+.form-control:focus {
+  background-color: #1c3f1c;
+  color: #33ff33;
+  border-color: #00ff00;
+  box-shadow: none;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+  border-top: 2px solid #33ff33;
+}
+
+/* ===== CARRUSEL RESPONSIVE SIN RECORTES ===== */
+
+.carousel-item img {
+  width: 100%;
+  height: 69vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+#botonMusica {
+  border: 1px solid #33ff33;
+  color: #33ff33;
+}
+
+#botonMusica:hover {
+  background-color: #33ff33;
+  color: black;
+}
+
+.faction-logo {
+  width: 150px;       /* tamaño fijo más pequeño */
+  height: 150px;
+  object-fit: contain; /* no se deforman */
+  display: block;
+  margin: 0 auto 15px auto; /* centrado */
+}
+
+.faccion {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo-fallout4 {
+  width: 300px;   /* ajusta el tamaño aquí */
+  height: auto;   /* mantiene proporción */
+}

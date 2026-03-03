@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fallout - Inicio</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Fallout</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="juegos.html">Juegos</a></li>
+        <li class="nav-item"><a class="nav-link" href="facciones.html">Facciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item">
+          <button id="botonMusica" class="btn btn-outline-success ms-3">🔇</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CARRUSEL -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="img/vaultboy1.jpg" class="d-block w-100" alt="Vault Boy">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/powerarmor.jpg" class="d-block w-100" alt="Power Armor">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/wasteland.jpg" class="d-block w-100" alt="Wasteland">
+    </div>
+
+  </div>
+</div>
+
+<!-- CONTENIDO -->
+<div class="container text-center mt-5">
+  <h1 class="titulo">Bienvenido al Yermo</h1>
+  <p>Explora el universo postapocalíptico de Fallout, donde la guerra nuclear cambió el mundo para siempre.</p>
+</div>
+
+<footer class="bg-dark text-light text-center p-3 mt-5">
+  © 2026 Proyecto Fallout Bootstrap David Pérez Lema
+</footer>
+
+<!-- AUDIO -->
+<audio id="musicaFondo" loop>
+  <source src="audio/fallout-music.mp3" type="audio/mp3">
+</audio>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const musica = document.getElementById("musicaFondo");
+  const boton = document.getElementById("botonMusica");
+  boton.addEventListener("click", () => {
+    if (musica.paused) {
+      musica.play();
+      boton.innerHTML = "🔊";
+    } else {
+      musica.pause();
+      boton.innerHTML = "🔇";
+    }
+  });
+});
+</script>
+
+</body>
+</html>
