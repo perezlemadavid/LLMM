@@ -12,4 +12,4 @@ Este repositorio incluye actividades llevadas a cabo en el módulo Lenguajes de 
 | **Tarea 2** | [Ver Tarea 2](./Tarea2) |
 | **Tarea 3** | [Ver Tarea 3](./Tarea3) |
 | **Web4U** | [Ver Web4U](./Web4U) |
-| **ProyectoBootstrap** | [Ver Web]([https://perezlemadavid.github.io/LLMM/](https://perezlemadavid.github.io/LLMM/)) [Contenido](./ProyectoBootstrap) |
+| **ProyectoBootstrap** | [Ver Web](https://perezlemadavid.github.io/LLMM/) [Contenido](./ProyectoBootstrap) |
