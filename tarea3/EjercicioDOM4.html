@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4: Borrar Lista</title>
+</head>
+<body>
+    <ul id="miLista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <button onclick="borrarUltimo()">Borrar último</button>
+
+    <script>
+        function borrarUltimo() {
+            const lista = document.getElementById("miLista");
+            if (lista.hasChildNodes()) {
+                lista.removeChild(lista.lastElementChild);
+            }
+        }
+    </script>
+</body>
+</html>

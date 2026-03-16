@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Frases Aleatorias</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    text-align:center;
+    padding-top:100px;
+}
+
+#caja-frase{
+    background:white;
+    padding:30px;
+    width:500px;
+    margin:auto;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+#frase{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+#autor{
+    font-style:italic;
+    color:gray;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    font-size:16px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div id="caja-frase">
+    <p id="frase">Haz clic en el botón para ver una frase</p>
+    <p id="autor"></p>
+    <button onclick="nuevaFrase()">Nueva frase</button>
+</div>
+
+<script>
+
+const frases = [
+    {texto:"La mejor manera de predecir el futuro es crearlo.", autor:"Peter Drucker"},
+    {texto:"La vida es lo que ocurre mientras haces otros planes.", autor:"John Lennon"},
+    {texto:"Haz lo que puedas, con lo que tengas, donde estés.", autor:"Theodore Roosevelt"},
+    {texto:"El éxito no es definitivo, el fracaso no es fatal.", autor:"Winston Churchill"},
+    {texto:"Cree que puedes y ya estás a medio camino.", autor:"Theodore Roosevelt"}
+];
+
+function nuevaFrase(){
+    let numeroAleatorio = Math.floor(Math.random() * frases.length);
+
+    document.getElementById("frase").innerText = frases[numeroAleatorio].texto;
+    document.getElementById("autor").innerText = "- " + frases[numeroAleatorio].autor;
+}
+
+</script>
+
+</body>
+</html>

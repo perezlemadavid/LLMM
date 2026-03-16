@@ -1,0 +1,12 @@
+Análisis de la estructura (Árbol XML)
+El archivo sigue esta jerarquía:
+
+Raíz: publication
+
+Hijo: newsitem
+
+Rama source: Contiene agency y editor.
+
+Hoja class: Define la categoría (local).
+
+Rama article: Contiene heading, text y summary.

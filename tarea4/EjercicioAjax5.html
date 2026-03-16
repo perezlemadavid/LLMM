@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; line-height: 1.6; }
+        .nasa-card { border: 1px solid #ddd; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        img { max-width: 100%; height: auto; border-radius: 5px; margin-top: 15px; display: block; }
+        .date { color: #666; font-style: italic; }
+        .explanation { text-align: justify; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="nasa-card">
+    <h2 id="title">Cargando datos de la NASA...</h2>
+    <p id="date" class="date"></p>
+    
+    <img id="nasa-image" src="" alt="Astronomy Picture of the Day">
+    
+    <p id="explanation" class="explanation"></p>
+</div>
+
+<script>
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+    const nasaData = JSON.parse(this.responseText);
+
+    // 1. Muestra el título (añadido para contexto)
+    document.getElementById("title").innerHTML = nasaData.title;
+
+    // 2. Muestra el valor de "date"
+    document.getElementById("date").innerHTML = "Fecha: " + nasaData.date;
+
+    // 3. Muestra el valor de "explanation"
+    document.getElementById("explanation").innerHTML = nasaData.explanation;
+
+    // 4. Muestra la imagen usando el valor de "url"
+    // Asignamos la URL del JSON al atributo 'src' de la etiqueta img
+    document.getElementById("nasa-image").src = nasaData.url;
+}
+
+// URL de la API con la fecha solicitada
+xhttp.open("GET", "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2020-05-01");
+xhttp.send();
+</script>
+
+</body>
+</html>

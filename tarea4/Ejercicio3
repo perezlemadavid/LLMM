@@ -1,0 +1,19 @@
+Errores detectados y correcciones:
+
+Error de anidamiento (Overlap):
+
+Error: En las etiquetas de <president> y <secretary>, la etiqueta <extension> se cierra después de la etiqueta padre (ej. </president></extension>).
+
+Corrección: XML exige un anidamiento estricto "LIFO" (Last-In, First-Out). La etiqueta que se abre al último debe cerrarse primero: <president>...<extension>...</extension></president>.
+
+Contenido mixto desordenado:
+
+Error: El texto (ej. "Bill Gates") está suelto junto a un elemento hijo (<extension>). Aunque XML permite contenido mixto, es una mala práctica de diseño que dificulta la extracción de datos.
+
+Corrección: Es mejor envolver el nombre en su propia etiqueta, como <name>Bill Gates</name>.
+
+Estructura jerárquica débil (Semántica):
+
+Error: Los elementos <president> y <secretary> están al mismo nivel que <company>, pero lógicamente pertenecen a esa compañía. Si hay varias empresas, no sabríamos de cuál es cada presidente.
+
+Corrección: Agrupar al personal dentro de cada bloque <company>.

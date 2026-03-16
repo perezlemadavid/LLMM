@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7: Slider de Imágenes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            font-family: sans-serif;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 90%;
+            max-width: 700px;
+            height: 400px;
+            border: 4px solid #eee;
+            border-radius: 8px;
+            background: url('https://picsum.photos/id/1018/800/500') center/cover no-repeat;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.7);
+            transition: background-image 0.4s ease-in-out;
+        }
+
+        .btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 15px;
+            border: 1px solid white;
+            cursor: pointer;
+            font-size: 2rem;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-left {
+            left: 10px;
+        }
+
+        .btn-right {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider-container" id="slider">
+        <button class="btn btn-left" id="leftBtn">&#10094;</button>
+        <button class="btn btn-right" id="rightBtn">&#10095;</button>
+    </div>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const leftBtn = document.getElementById('leftBtn');
+        const rightBtn = document.getElementById('rightBtn');
+
+        const images = [
+            "1018", "1015", "1019", "1022", "1025"
+        ];
+
+        let index = 0;
+
+        function updateSlider() {
+            const id = images[index];
+            slider.style.backgroundImage = `url('https://picsum.photos/id/${id}/800/500')`;
+        }
+
+        rightBtn.addEventListener('click', () => {
+            index++;
+            if (index > images.length - 1) {
+                index = 0;
+            }
+            updateSlider();
+        });
+
+        leftBtn.addEventListener('click', () => {
+            index--;
+            if (index < 0) {
+                index = images.length - 1;
+            }
+            updateSlider();
+        });
+    </script>
+</body>
+</html>

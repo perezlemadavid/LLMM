@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<letter>
+  <metadata>
+    <date>2026-03-16</date>
+    <subject>Propuesta de colaboración tecnológica</subject>
+  </metadata>
+
+  <sender>
+    <name>Alex Rivera</name>
+    <address>
+      <street>Calle Innovación 42</street>
+      <city>Madrid</city>
+      <zip>28001</zip>
+    </address>
+  </sender>
+
+  <receiver>
+    <name>Beatriz Soto</name>
+    <company>Sistemas Globales S.A.</company>
+    <address>
+      <street>Avenida del Parque 10</street>
+      <city>Barcelona</city>
+      <zip>08005</zip>
+    </address>
+  </receiver>
+
+  <body>
+    <p>Estimada Beatriz,</p>
+    <p>Le escribo para agradecerle la reunión de la semana pasada. Los puntos discutidos sobre la implementación de XML en sus flujos de trabajo fueron muy productivos.</p>
+    <p>Adjunto a esta carta encontrará el borrador del contrato para su revisión inicial.</p>
+  </body>
+
+  <signature>
+    <valediction>Atentamente,</valediction>
+    <name>Alex Rivera</name>
+    <title>Director Técnico</title>
+  </signature>
+</letter>

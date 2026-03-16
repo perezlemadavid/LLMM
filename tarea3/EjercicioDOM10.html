@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 10: Lights Out</title>
+    <style>
+        .grid { display: grid; grid-template-columns: repeat(3, 100px); gap: 5px; }
+        .cell { width: 100px; height: 100px; background-color: #555; border-radius: 5px; cursor: pointer; }
+        .on { background-color: #f1c40f; }
+    </style>
+</head>
+<body>
+    <h2>Apaga todas las luces (3x3)</h2>
+    <div class="grid" id="tablero"></div>
+
+    <script>
+        const tablero = document.getElementById("tablero");
+        const celdas = [];
+
+        for (let i = 0; i < 9; i++) {
+            const cell = document.createElement("div");
+            cell.classList.add("cell");
+            if (Math.random() > 0.5) cell.classList.add("on");
+            cell.onclick = () => alternar(i);
+            tablero.appendChild(cell);
+            celdas.push(cell);
+        }
+
+        function alternar(i) {
+            cambiar(i);
+            if (i % 3 !== 0) cambiar(i - 1);
+            if (i % 3 !== 2) cambiar(i + 1);
+            if (i - 3 >= 0) cambiar(i - 3);
+            if (i + 3 < 9) cambiar(i + 3);
+            verificarVictoria();
+        }
+
+        function cambiar(i) {
+            celdas[i].classList.toggle("on");
+        }
+
+        function verificarVictoria() {
+            if (!document.querySelector(".on")) {
+                alert("¡Ganaste!");
+            }
+        }
+    </script>
+</body>
+</html>

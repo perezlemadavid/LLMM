@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td { border: 1px solid black; border-collapse: collapse; padding: 8px; }
+        th { background-color: #f2f2f2; }
+        .data-section { margin-bottom: 20px; font-family: sans-serif; }
+    </style>
+</head>
+<body>
+
+<h2>Información de Libros (books.xml)</h2>
+<div id="output" class="data-section"></div>
+<div id="tabla-libros"></div>
+
+<script>
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+    const xmlDoc = this.responseXML;
+    const books = xmlDoc.getElementsByTagName("book");
+    let out = "";
+
+    // 1. Título del primer libro
+    let primerTitulo = books[0].getElementsByTagName("title")[0].textContent;
+    out += "<b>Título del primer libro:</b> " + primerTitulo + "<br><br>";
+
+    // 2. Todos los títulos
+    out += "<b>Todos los títulos:</b><br>";
+    for (let i = 0; i < books.length; i++) {
+        out += "- " + books[i].getElementsByTagName("title")[0].textContent + "<br>";
+    }
+    out += "<br>";
+
+    // 3. Número de atributos del cuarto libro
+    let numAttrs4 = books[3].attributes.length;
+    out += "<b>Número de atributos del cuarto libro:</b> " + numAttrs4 + "<br>";
+
+    // 4. Valor de los atributos del cuarto libro
+    let attrs4 = books[3].attributes;
+    out += "<b>Valores de atributos (Libro 4):</b> ";
+    for (let i = 0; i < attrs4.length; i++) {
+        out += attrs4[i].nodeName + " = " + attrs4[i].nodeValue + " ";
+    }
+    out += "<br><br>";
+
+    // 5. Número de autores del tercer libro
+    let autores3 = books[2].getElementsByTagName("author");
+    out += "<b>Número de autores del tercer libro:</b> " + autores3.length + "<br>";
+
+    // 6. Autores del tercer libro
+    out += "<b>Autores del tercer libro:</b> ";
+    for (let i = 0; i < autores3.length; i++) {
+        out += autores3[i].textContent + (i < autores3.length - 1 ? ", " : "");
+    }
+    out += "<br><hr>";
+
+    document.getElementById("output").innerHTML = out;
+
+    // 7. Muestra una tabla que muestre el título, primer autor, precio y año
+    let table = "<h3>Tabla de Libros</h3><table><tr><th>Título</th><th>Primer Autor</th><th>Precio</th><th>Año</th></tr>";
+    
+    for (let i = 0; i < books.length; i++) {
+        let title = books[i].getElementsByTagName("title")[0].textContent;
+        // Obtenemos solo el primer autor (índice 0)
+        let firstAuthor = books[i].getElementsByTagName("author")[0].textContent;
+        let price = books[i].getElementsByTagName("price")[0].textContent;
+        let year = books[i].getElementsByTagName("year")[0].textContent;
+        
+        table += "<tr><td>" + title + "</td><td>" + firstAuthor + "</td><td>" + price + "</td><td>" + year + "</td></tr>";
+    }
+    table += "</table>";
+    document.getElementById("tabla-libros").innerHTML = table;
+}
+
+xhttp.open("GET", "books.xml");
+xhttp.send();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDList>
+  <CD>
+    <album_title>Kind of Blue</album_title>
+    <artist>Miles Davis</artist>
+    <year>1959</year>
+    <category>Jazz</category>
+    <tracks>
+      <track>
+        <number>1</number>
+        <title>So What</title>
+        <duration>9:22</duration>
+      </track>
+      <track>
+        <number>2</number>
+        <title>Freddie Freeloader</title>
+        <duration>9:46</duration>
+      </track>
+    </tracks>
+  </CD>
+</CDList>

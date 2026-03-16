@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body { font-family: Arial, sans-serif; }
+    .container { max-width: 800px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+    h2 { color: #0056b3; border-bottom: 2px solid #0056b3; }
+    .info-block { margin-bottom: 15px; padding: 10px; background-color: #f9f9f9; border-left: 5px solid #0056b3; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+    th { background-color: #eee; }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2 id="municipio">Cargando datos meteorológicos...</h2>
+    
+    <div class="info-block">
+        <strong>Temperaturas:</strong> 
+        Máxima: <span id="max">--</span>°C | Mínima: <span id="min">--</span>°C
+    </div>
+
+    <div class="info-block">
+        <strong>Viento y Humedad:</strong><br>
+        Dirección viento: <span id="viento-dir">--</span> | Velocidad: <span id="viento-vel">--</span> km/h<br>
+        Humedad Relativa: Máx <span id="hum-max">--</span>% | Mín <span id="hum-min">--</span>%
+    </div>
+
+    <h3>Estado del cielo por tramos horarios</h3>
+    <table id="tabla-cielo">
+        <tr>
+            <th>Tramo Horario</th>
+            <th>Estado del Cielo</th>
+        </tr>
+    </table>
+</div>
+
+<script>
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+    const xmlDoc = this.responseXML;
+    
+    const nombre = xmlDoc.getElementsByTagName("nombre")[0].textContent;
+    document.getElementById("municipio").innerHTML = "Predicción para: " + nombre;
+
+    const dia = xmlDoc.getElementsByTagName("prediccion")[0].getElementsByTagName("dia")[0];
+
+    const tMax = dia.getElementsByTagName("temperatura")[0].getElementsByTagName("maxima")[0].textContent;
+    const tMin = dia.getElementsByTagName("temperatura")[0].getElementsByTagName("minima")[0].textContent;
+    document.getElementById("max").innerHTML = tMax;
+    document.getElementById("min").innerHTML = tMin;
+
+    const viento = dia.getElementsByTagName("viento")[0]; 
+    document.getElementById("viento-dir").innerHTML = viento.getElementsByTagName("direccion")[0].textContent;
+    document.getElementById("viento-vel").innerHTML = viento.getElementsByTagName("velocidad")[0].textContent;
+
+    const hMax = dia.getElementsByTagName("humedad_relativa")[0].getElementsByTagName("maxima")[0].textContent;
+    const hMin = dia.getElementsByTagName("humedad_relativa")[0].getElementsByTagName("minima")[0].textContent;
+    document.getElementById("hum-max").innerHTML = hMax;
+    document.getElementById("hum-min").innerHTML = hMin;
+
+    const estadosCielo = dia.getElementsByTagName("estado_cielo");
+    let tabla = document.getElementById("tabla-cielo");
+    
+    for (let i = 0; i < estadosCielo.length; i++) {
+        let periodo = estadosCielo[i].getAttribute("periodo");
+        let descripcion = estadosCielo[i].getAttribute("descripcion");
+        
+        if (periodo && descripcion) {
+            let fila = tabla.insertRow(-1);
+            let celda1 = fila.insertCell(0);
+            let celda2 = fila.insertCell(1);
+            celda1.innerHTML = periodo + "h";
+            celda2.innerHTML = descripcion;
+        }
+    }
+}
+
+xhttp.open("GET", "https://www.aemet.es/xml/municipios/localidad_21041.xml");
+xhttp.send();
+</script>
+
+</body>
+</html>

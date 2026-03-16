@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9: Stop Timeout</title>
+</head>
+<body>
+    <button onclick="detener()">Detener Alerta</button>
+    <script>
+        const tiempo = setTimeout(function() {
+            alert("Alerta ejecutada");
+        }, 5000);
+
+        function detener() {
+            clearTimeout(tiempo);
+            alert("Alerta cancelada");
+        }
+    </script>
+</body>
+</html>

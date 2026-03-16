@@ -1,0 +1,25 @@
+1. Elemento con contenido
+Un elemento básico se compone de una etiqueta de apertura, el contenido de texto y una etiqueta de cierre. Los nombres de los elementos en XML no pueden tener espacios, por lo que solemos usar un guion bajo o mayúsculas intermedias (camelCase).
+
+XML
+
+<test_element>This is our first element!</test_element>
+2. Jerarquía de elementos
+En XML, la jerarquía se representa mediante el anidamiento (poner unos elementos dentro de otros). Así se vería la estructura de tu libro:
+
+XML
+
+<book>
+  <chapters>
+    </chapters>
+  <author>
+    <name>Nombre del autor</name>
+    <address>Dirección del autor</address>
+  </author>
+</book>
+3. Elemento con atributos
+Los atributos se colocan dentro de la etiqueta de apertura. Recuerda que en XML los valores de los atributos siempre deben ir entre comillas.
+
+XML
+
+<entry no="24" date="27.10.2004" />

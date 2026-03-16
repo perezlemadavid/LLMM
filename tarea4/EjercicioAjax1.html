@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.divTable {
+    display: table;
+    width: 100%;
+    border: 1px solid #000;
+}
+.divTableRow {
+    display: table-row;
+}
+.divTableHeading {
+    display: table-header-group;
+    background-color: #ddd;
+    font-weight: bold;
+}
+.divTableCell, .divTableHead {
+    display: table-cell;
+    border: 1px solid #999;
+    padding: 5px;
+}
+.divTableBody {
+    display: table-row-group;
+}
+</style>
+</head>
+<body>
+
+<h2>Catálogo AJAX con DIVs</h2>
+<button type="button" onclick="loadDoc()">Cargar Datos</button>
+<br><br>
+
+<div id="demo"></div>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    const xmlDoc = this.responseXML;
+    const cds = xmlDoc.getElementsByTagName("CD");
+    
+    let html = '<div class="divTable">';
+    
+    html += '<div class="divTableHeading">';
+    html += '<div class="divTableRow">';
+    html += '<div class="divTableHead">Country</div>';
+    html += '<div class="divTableHead">Company</div>';
+    html += '<div class="divTableHead">Price</div>';
+    html += '<div class="divTableHead">Year</div>';
+    html += '</div></div>';
+    
+    html += '<div class="divTableBody">';
+    
+    for (let i = 0; i < cds.length; i++) {
+      let country = cds[i].getElementsByTagName("COUNTRY")[0].textContent;
+      let company = cds[i].getElementsByTagName("COMPANY")[0].textContent;
+      let price = cds[i].getElementsByTagName("PRICE")[0].textContent;
+      let year = cds[i].getElementsByTagName("YEAR")[0].textContent;
+      
+      html += '<div class="divTableRow">';
+      html += '<div class="divTableCell">' + country + '</div>';
+      html += '<div class="divTableCell">' + company + '</div>';
+      html += '<div class="divTableCell">' + price + ' €</div>';
+      html += '<div class="divTableCell">' + year + '</div>';
+      html += '</div>';
+    }
+    
+    html += '</div></div>';
+    document.getElementById("demo").innerHTML = html;
+  }
+  xhttp.open("GET", "cd_catalog.xml");
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>

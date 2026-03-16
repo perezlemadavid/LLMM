@@ -1,0 +1,29 @@
+1. ¿Cómo se ven los comentarios en XML? (Sección 2.5)
+Según la especificación, los comentarios comienzan con la secuencia ``.
+
+Reglas importantes mencionadas en el estándar:
+
+No pueden aparecer antes de la declaración XML (el prólogo).
+
+No pueden aparecer dentro de las etiquetas (dentro de < >).
+
+Por razones de compatibilidad, la cadena de caracteres -- (doble guion) no debe aparecer dentro de un comentario.
+
+2. ¿Puede repetirse un atributo en el mismo elemento? (Sección 3.1)
+No. La Sección 3.1, bajo la restricción de "Bien Formado" (Well-Formedness Constraint), establece explícitamente la Unicidad de Atributos (Unique Att Spec).
+
+El estándar dice: "No attribute name may appear more than once in the same start-tag or empty-element tag" (Ningún nombre de atributo puede aparecer más de una vez en la misma etiqueta de apertura o etiqueta de elemento vacío).
+
+Incorrecto: <person id="1" id="2">
+
+Correcto: <person id="1" secondary_id="2">
+
+3. ¿Dónde se establece que los nombres de las etiquetas de apertura y cierre deben coincidir?
+Esto se encuentra también en la Sección 3.1 (Start-Tags, End-Tags, and Empty-Element Tags).
+
+Específicamente, se define bajo la restricción de "Bien Formado" llamada Element Type Match:
+
+"The Name in an element's end-tag must match the element type in the start-tag."
+(El nombre en la etiqueta de cierre de un elemento debe coincidir con el tipo de elemento en la etiqueta de apertura).
+
+Esto es lo que hace que XML sea sensible a mayúsculas y minúsculas (case-sensitive). Por ejemplo, <Body> y </body> no coinciden según esta regla del estándar.

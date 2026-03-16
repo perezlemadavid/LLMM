@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 2 - AJAX XML</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.4; }
+        .section { margin-bottom: 20px; padding: 10px; border-bottom: 1px solid #ccc; }
+        h3 { color: #2c3e50; }
+    </style>
+</head>
+<body>
+
+    <h2>Procesamiento de Catálogo XML (AJAX)</h2>
+
+    <div class="section">
+        <h3>1. Títulos de los CDs:</h3>
+        <p id="titulos"></p>
+    </div>
+
+    <div class="section">
+        <h3>2. Precios:</h3>
+        <p id="precios"></p>
+    </div>
+
+    <div class="section">
+        <h3>3. Compañías:</h3>
+        <p id="companias"></p>
+    </div>
+
+    <div class="section">
+        <h3>4. Resumen Combinado (Título - Artista - Precio - Compañía):</h3>
+        <p id="resumen"></p>
+    </div>
+
+<script>
+const xhttp = new XMLHttpRequest();
+
+xhttp.onload = function() {
+    const xmlDoc = this.responseXML;
+    const cds = xmlDoc.getElementsByTagName("CD");
+    
+    // Variables para acumular los resultados
+    let txtTitulos = "";
+    let txtPrecios = "";
+    let txtCompanias = "";
+    let txtResumen = "";
+
+    // Bucle único para recorrer todos los CDs y extraer la información
+    for (let i = 0; i < cds.length; i++) {
+        // Extraemos cada nodo
+        let titulo = cds[i].getElementsByTagName("TITLE")[0].textContent;
+        let artista = cds[i].getElementsByTagName("ARTIST")[0].textContent;
+        let precio = cds[i].getElementsByTagName("PRICE")[0].textContent;
+        let compania = cds[i].getElementsByTagName("COMPANY")[0].textContent;
+
+        // Formateamos cada salida según lo pedido
+        txtTitulos += titulo + "<br>";
+        txtPrecios += precio + " €<br>";
+        txtCompanias += compania + "<br>";
+        
+        // El ejemplo combinado
+        txtResumen += "<b>" + titulo + "</b> - (" + artista + ") | " + precio + "€ | " + compania + "<br>";
+    }
+
+    // Inyectamos los resultados en el HTML
+    document.getElementById("titulos").innerHTML = txtTitulos;
+    document.getElementById("precios").innerHTML = txtPrecios;
+    document.getElementById("companias").innerHTML = txtCompanias;
+    document.getElementById("resumen").innerHTML = txtResumen;
+}
+
+xhttp.open("GET", "cd_catalog.xml");
+xhttp.send();
+</script>
+
+</body>
+</html>
