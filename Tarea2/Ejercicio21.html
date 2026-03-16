@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ejercicio 21 - Imágenes (miniaturas)</title>
+  <style>
+    .gallery {
+      margin: 10px;
+    }
+
+   
+    .thumbnail {
+      float: left;                 
+      width: 150px;                
+      margin: 8px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      border-radius: 6px;
+      overflow: hidden;
+      background: #fff;
+      font-family: sans-serif;
+      font-size: 13px;
+    }
+
+
+    .thumbnail img {
+      display: block;
+      width: 100%;                 
+      height: auto;
+    }
+
+ 
+    .caption {
+      padding: 6px 8px;
+      color: #333;
+    }
+
+   
+    .gallery::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+    @media (max-width: 420px) {
+      .thumbnail { width: 48%; margin: 1%; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejercicio 21 - Grupo de miniaturas</h1>
+
+  <div class="gallery">
+
+    <a class="thumbnail" href="https://picsum.photos/id/1015/1200/800" target="_blank" rel="noopener noreferrer">
+      <img src="https://picsum.photos/id/1015/300/200" alt="Montañas y lago">
+      <div class="caption">Montañas y lago</div>
+    </a>
+
+    <a class="thumbnail" href="https://picsum.photos/id/1025/1200/800" target="_blank" rel="noopener noreferrer">
+      <img src="https://picsum.photos/id/1025/300/200" alt="Perro corriendo">
+      <div class="caption">Perro corriendo</div>
+    </a>
+
+    <a class="thumbnail" href="https://picsum.photos/id/1035/1200/800" target="_blank" rel="noopener noreferrer">
+      <img src="https://picsum.photos/id/1035/300/200" alt="Ciudad nocturna">
+      <div class="caption">Ciudad nocturna</div>
+    </a>
+
+    <a class="thumbnail" href="https://picsum.photos/id/1043/1200/800" target="_blank" rel="noopener noreferrer">
+      <img src="https://picsum.photos/id/1043/300/200" alt="Carretera y árbol">
+      <div class="caption">Carretera y árbol</div>
+    </a>
+
+    <a class="thumbnail" href="https://picsum.photos/id/1057/1200/800" target="_blank" rel="noopener noreferrer">
+      <img src="https://picsum.photos/id/1057/300/200" alt="Playa y acantilado">
+      <div class="caption">Playa y acantilado</div>
+    </a>
+
+    <a class="thumbnail" href="https://picsum.photos/id/106/1200/800" target="_blank" rel="noopener noreferrer">
+      <img src="https://picsum.photos/id/106/300/200" alt="Bosque">
+      <div class="caption">Bosque</div>
+    </a>
+  </div>
+</body>
+</html>

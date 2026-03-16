@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende propiedades CSS esenciales con ejemplos y fragmentos de código.">
+    <title>Web4U - Ejemplos CSS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+
+        #color-example { color: #2980b9; }
+        #bg-color-example { background-color: #f1c40f; padding: 10px; }
+        #font-size-example { font-size: 20px; }
+        #border-example { border: 2px solid #e74c3c; padding: 10px; }
+        #margin-example { border: 1px solid #ccc; margin-left: 50px; padding: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ejemplos de CSS3</h1>
+    </header>
+
+    <nav>
+        <a href="index.html" title="Ir a la página principal">Inicio</a>
+        <a href="html.html" title="Aprende sobre etiquetas HTML">HTML</a>
+        <a href="css.html" class="active" title="Estás en la página de CSS">CSS</a>
+        <a href="svg.html" title="Aprende sobre gráficos SVG">SVG</a>
+        <a href="../css.html" title="Change to English" style="float: right;">🇬🇧 EN</a>
+    </nav>
+
+    <div class="container">
+        <h3>Tabla de Contenidos</h3>
+        <ul>
+            <li><a href="#color" title="Saltar a la propiedad color">1. color</a></li>
+            <li><a href="#background" title="Saltar a la propiedad background-color">2. background-color</a></li>
+            <li><a href="#font-size" title="Saltar a la propiedad font-size">3. font-size</a></li>
+            <li><a href="#border" title="Saltar a la propiedad border">4. border</a></li>
+            <li><a href="#margin" title="Saltar a la propiedad margin">5. margin</a></li>
+        </ul>
+        <hr>
+
+        <article id="color">
+            <h3>1. Propiedad: color</h3>
+            <p><strong>Caso de Uso:</strong> Establece el color de primer plano del texto.</p>
+            
+            <p><strong>Ejemplo de Código:</strong></p>
+            <code>
+<pre>
+#color-example {
+  color: #2980b9; /* Azul */
+}
+</pre>
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <p id="color-example">Este texto es azul.</p>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/cssref/pr_text_color.asp" target="_blank" title="Abrir documentación W3C de CSS color">W3C color</a></p>
+        </article>
+
+        <hr>
+
+        <article id="background">
+            <h3>2. Propiedad: background-color</h3>
+            <p><strong>Caso de Uso:</strong> Establece el color de fondo de un elemento.</p>
+            <code>
+<pre>
+#bg-color-example {
+  background-color: #f1c40f; /* Amarillo */
+}
+</pre>
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <div id="bg-color-example">Este elemento tiene un fondo amarillo.</div>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/cssref/pr_background-color.asp" target="_blank" title="Abrir documentación W3C de CSS background-color">W3C background-color</a></p>
+        </article>
+        
+        <hr>
+
+        <article id="font-size">
+            <h3>3. Propiedad: font-size</h3>
+            <p><strong>Caso de Uso:</strong> Establece el tamaño de la fuente.</p>
+            <code>
+<pre>
+#font-size-example {
+  font-size: 20px;
+}
+</pre>
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <p id="font-size-example">Este texto tiene 20 píxeles de tamaño.</p>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/cssref/pr_font_font-size.asp" target="_blank" title="Abrir documentación W3C de CSS font-size">W3C font-size</a></p>
+        </article>
+
+        <hr>
+
+        <article id="border">
+            <h3>4. Propiedad: border</h3>
+            <p><strong>Caso de Uso:</strong> Establece el grosor, estilo y color del borde de un elemento.</p>
+            <code>
+<pre>
+#border-example {
+  border: 2px solid #e74c3c; /* Borde rojo sólido */
+}
+</pre>
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <div id="border-example">Este elemento tiene un borde rojo sólido.</div>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/cssref/pr_border.asp" target="_blank" title="Abrir documentación W3C de CSS border">W3C border</a></p>
+        </article>
+
+        <hr>
+
+        <article id="margin">
+            <h3>5. Propiedad: margin</h3>
+            <p><strong>Caso de Uso:</strong> Crea espacio alrededor de los elementos, fuera de cualquier borde definido.</p>
+            <code>
+<pre>
+#margin-example {
+  margin-left: 50px; /* Margen izquierdo */
+}
+</pre>
+            </code>
+            <p><strong>Resultado:</strong></p>
+            <div id="margin-example">Este elemento tiene un margen de 50px a la izquierda.</div>
+            <p><strong>Más Información:</strong> <a href="https://www.w3schools.com/cssref/pr_margin.asp" target="_blank" title="Abrir documentación W3C de CSS margin">W3C margin</a></p>
+        </article>
+
+        <hr>
+        
+        <h3>Descargar Contenido</h3>
+        <p>Obtén la versión sin conexión de este tutorial:</p>
+        <a href="../pdf/css_content.pdf" class="pdf-link" title="Descargar la versión PDF de esta página (Archivo No-HTML)">
+            📄 Descargar Guía CSS (PDF)
+        </a>
+    </div>
+</body>
+</html>

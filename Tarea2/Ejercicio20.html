@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 20 - Imágenes flotantes</title>
+  <style>
+    .img-left {
+      float: left;
+      margin: 0 15px 10px 0;
+      width: 150px; 
+    }
+    .img-right {
+      float: right;
+      margin: 0 0 10px 15px;
+      width: 150px;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="clearfix">
+    <img src="pic_trulli.jpg" alt="Italian Trulli" class="img-left">
+    <p>
+      Esta es la primera imagen (pic_trulli.jpg) flotada a la izquierda. A su derecha hay un párrafo con texto descriptivo que acompaña a la imagen. Aquí puedes poner un texto explicativo, descripción, o lo que desees.
+    </p>
+  </div>
+
+  <div class="clearfix">
+    <img src="img_girl.jpg" alt="Girl in a jacket" class="img-right">
+    <p>
+      Esta es la segunda imagen (img_girl.jpg) flotada a la 
+    </p>derecha. El texto del párrafo envuelve la imagen por su lado izquierdo.
+  </div>
+
+  <div class="clearfix">
+    <img src="img_chania.jpg" alt="Flowers in Chania" class="img-left">
+    <p>
+      Esta tercera imagen (img_chania.jpg), flotada nuevamente a la izquierda, va acompañada de su propio párrafo con texto. De este modo puedes ver un tercer bloque con imagen + texto en diseño flotante.
+    </p>
+  </div>
+
+</body>
+</html>

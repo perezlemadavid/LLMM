@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fallout - Historia</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Fallout</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="juegos.html">Juegos</a></li>
+        <li class="nav-item"><a class="nav-link" href="facciones.html">Facciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item">
+          <button id="botonMusica" class="btn btn-outline-success ms-3">🔇</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+
+  <h2>La Línea Temporal de Fallout</h2>
+
+  <p>
+    El universo de Fallout se desarrolla en una línea temporal alternativa donde la
+    tecnología evolucionó siguiendo la estética retrofuturista de los años 50.
+    Aunque el mundo avanzó en energía nuclear y robótica, la cultura permaneció
+    anclada en ese estilo clásico americano.
+  </p>
+
+  <h3 class="mt-4">La Crisis de los Recursos</h3>
+
+  <p>
+    Durante el siglo XXI, el mundo comenzó a sufrir una grave escasez de recursos
+    energéticos. Las tensiones entre las grandes potencias crecieron hasta que
+    finalmente, el 23 de octubre de 2077, comenzó la Gran Guerra.
+  </p>
+
+  <p>
+    En menos de dos horas, la mayoría de las ciudades del planeta fueron
+    destruidas por armas nucleares. Millones murieron instantáneamente.
+  </p>
+
+  <h3 class="mt-4">Vault-Tec y los Refugios</h3>
+
+  <p>
+    La empresa Vault-Tec construyó refugios subterráneos (Vaults) para proteger
+    a parte de la población. Sin embargo, muchos de estos refugios eran en
+    realidad experimentos sociales encubiertos.
+  </p>
+
+  <div class="ratio ratio-16x9 mt-4">
+    <iframe src="https://www.youtube.com/embed/XW7Of3g2JME"
+            title="Fallout Trailer"
+            allowfullscreen>
+    </iframe>
+  </div>
+
+  <h3 class="mt-5">El Mundo Después</h3>
+
+  <p>
+    Doscientos años después, los supervivientes emergen a un mundo devastado:
+    el Yermo. La radiación ha provocado mutaciones en animales y humanos,
+    creando criaturas como los necrófagos y los supermutantes.
+  </p>
+
+  <img src="img/wasteland.jpg" class="img-fluid rounded mt-3" alt="Yermo">
+
+</div>
+
+<audio id="musicaFondo" loop>
+  <source src="audio/fallout-music.mp3" type="audio/mp3">
+</audio>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const musica = document.getElementById("musicaFondo");
+  const boton = document.getElementById("botonMusica");
+  boton.addEventListener("click", () => {
+    if (musica.paused) {
+      musica.play();
+      boton.innerHTML = "🔊";
+    } else {
+      musica.pause();
+      boton.innerHTML = "🔇";
+    }
+  });
+});
+</script>
+
+</body>
+</html>
