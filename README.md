@@ -80,8 +80,8 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 * **[Ejercicio XML 3](./Tarea4/Ejercicio3.xml)**: Implementación de atributos en elementos XML.
 * **[Ejercicio XML-DOM](./Tarea4/Ejercicio7.html)**: Visualización de datos de archivos XML en una tabla HTML.
 * **[Ajax Principal](./Tarea4/Ajax.html)**: Carga de archivos externos sin recargar la página.
-* **[Ajax 1](./Tarea4/Ajax1.html)**: Petición asíncrona de archivos de texto plano.
-* **[Ajax 2](./Tarea4/Ajax2.html)**: Petición asíncrona y procesamiento de datos XML externos.
+* **[Ajax 1](./Tarea4/EjercicioAjax1.html)**: Petición asíncrona de archivos de texto plano.
+* **[Ajax 2](./Tarea4/EjercicioAjax2.html)**: Petición asíncrona y procesamiento de datos XML externos.
 
 ---
 
