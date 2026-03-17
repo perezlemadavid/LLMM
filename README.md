@@ -89,7 +89,7 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 * **[Ajax 3](./Tarea4/EjercicioAjax3.html)**
 * **[Ajax 4](./Tarea4/EjercicioAjex4.html)**
 * **[Ajax 5](./Tarea4/EjercicioAjax5.html)**
-* **[Ejercicio 1 DOM](./Tarea4/EjercicioDOM1.html)**
+* **[Ejercicio 1 DOM](./Tarea4/EjercicioDOM1)**
 * **[Ejercicio 2 DOM](./Tarea4/EjercicioDOM2.html)**
 * **[Ejercicio 3 DOM](./Tarea4/Ejercicio3DOM.html)**
 
