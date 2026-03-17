@@ -75,13 +75,19 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 ##  Tarea 4: XML y Ajax (7 ejercicios)
 *Gestión de datos estructurados y peticiones de red.*
 
-* **[Ejercicio XML 1](./Tarea4/Ejercicio1.xml)**: Definición de sintaxis y jerarquía de nodos simple.
-* **[Ejercicio XML 2](./Tarea4/Ejercicio2.xml)**: Creación de catálogos complejos con etiquetas personalizadas.
-* **[Ejercicio XML 3](./Tarea4/Ejercicio3.xml)**: Implementación de atributos en elementos XML.
-* **[Ejercicio XML-DOM](./Tarea4/Ejercicio7.html)**: Visualización de datos de archivos XML en una tabla HTML.
-* **[Ajax Principal](./Tarea4/Ajax.html)**: Carga de archivos externos sin recargar la página.
+* **[Ejercicio 1](./Tarea4/Ejercicio1)**: Definición de sintaxis y jerarquía de nodos simple.
+* **[Ejercicio 2](./Tarea4/Ejercicio)**: Creación de catálogos complejos con etiquetas personalizadas.
+* **[Ejercicio 3](./Tarea4/Ejercicio3)**: Implementación de atributos en elementos XML.
+* **[Ejercicio 3 DOM](./Tarea4/Ejercicio3DOM.html)**
+* **[Ejercicio 4 XML](./Tarea4/Ejercicio4.xml)**
+* **[Ejercicio 5 XML](./Tarea4/Ejercicio5.xml)**
+* **[Ejercicio 6 XML](./Tarea4/Ejercicio6.xml)**
+* **[Ejercicio 7](./Tarea4/Ejercicio7)**
 * **[Ajax 1](./Tarea4/EjercicioAjax1.html)**: Petición asíncrona de archivos de texto plano.
 * **[Ajax 2](./Tarea4/EjercicioAjax2.html)**: Petición asíncrona y procesamiento de datos XML externos.
+* **[Ajax 3](./Tarea4/EjercicioAjax3.html)**
+* **[Ajax 4](./Tarea4/EjercicioAjax4.html)**
+* **[Ajax 5](./Tarea4/EjercicioAjax5.html)**
 
 ---
 
