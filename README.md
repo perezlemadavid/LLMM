@@ -1,4 +1,4 @@
-# 🌐 Lenguajes de Marcas (LLMM) - David Pérez Lema
+#  Lenguajes de Marcas (LLMM) - David Pérez Lema
 
 Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desarrollo paso a paso de interfaces web, hojas de estilo, interactividad con JS y manejo de datos asíncronos.
 
@@ -6,7 +6,7 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 
 ---
 
-## 📂 Tarea 1: Introducción (6 ejercicios)
+##  Tarea 1: Introducción (6 ejercicios)
 *Actividades iniciales de la Unidad 1 sobre estructuras básicas y Markdown.*
 
 * **[Ejercicio 1](./Tarea1/Ejercicio1.html)**: **Web Elemental.** Creación de una página básica con etiquetas `h1` y párrafo.
@@ -18,7 +18,7 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 
 ---
 
-## 🎨 Tarea 2: HTML y JavaScript Inicial (19 ejercicios)
+##  Tarea 2: HTML y JavaScript Inicial (19 ejercicios)
 *Ejercicios de tablas, formularios y scripts iniciales (del 10 al 28).*
 
 * **[Ejercicio 10](./Tarea2/Ejercicio10.html)**: **Tablas.** Creación de una estructura de tabla sencilla con filas y columnas.
@@ -43,7 +43,7 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 
 ---
 
-## ⚡ Tarea 3: JavaScript y DOM (20 ejercicios)
+##  Tarea 3: JavaScript y DOM (20 ejercicios)
 *Bloque de lógica de programación y manipulación del árbol del documento.*
 
 #### Lógica Básica
@@ -72,7 +72,7 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 
 ---
 
-## 📊 Tarea 4: XML y Ajax (7 ejercicios)
+##  Tarea 4: XML y Ajax (7 ejercicios)
 *Gestión de datos estructurados y peticiones de red.*
 
 * **[Ejercicio XML 1](./Tarea4/Ejercicio1.xml)**: Definición de sintaxis y jerarquía de nodos simple.
@@ -85,7 +85,7 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 
 ---
 
-## 🚀 Proyectos Principales
+##  Proyectos Principales
 
 | Proyecto | Descripción | Enlace |
 | :--- | :--- | :---: |
