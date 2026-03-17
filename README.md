@@ -76,9 +76,10 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 *Gestión de datos estructurados y peticiones de red.*
 
 * **[Ejercicio 1](./Tarea4/Ejercicio1)**: Definición de sintaxis y jerarquía de nodos simple.
-* **[Ejercicio 2](./Tarea4/Ejercicio)**: Creación de catálogos complejos con etiquetas personalizadas.
+* **[Ejercicio 2](./Tarea4/Ejercicio2)**: Creación de catálogos complejos con etiquetas personalizadas.
+* **[Ejercicio 2 Ex](./Tarea4/Ex2.xml)**
+* **[Ejercicio 3 Ex](./Tarea4/Ex3.xml)**
 * **[Ejercicio 3](./Tarea4/Ejercicio3)**: Implementación de atributos en elementos XML.
-* **[Ejercicio 3 DOM](./Tarea4/Ejercicio3DOM.html)**
 * **[Ejercicio 4 XML](./Tarea4/Ejercicio4.xml)**
 * **[Ejercicio 5 XML](./Tarea4/Ejercicio5.xml)**
 * **[Ejercicio 6 XML](./Tarea4/Ejercicio6.xml)**
@@ -86,8 +87,11 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 * **[Ajax 1](./Tarea4/EjercicioAjax1.html)**: Petición asíncrona de archivos de texto plano.
 * **[Ajax 2](./Tarea4/EjercicioAjax2.html)**: Petición asíncrona y procesamiento de datos XML externos.
 * **[Ajax 3](./Tarea4/EjercicioAjax3.html)**
-* **[Ajax 4](./Tarea4/EjercicioAjax4.html)**
+* **[Ajax 4](./Tarea4/EjercicioAjex4.html)**
 * **[Ajax 5](./Tarea4/EjercicioAjax5.html)**
+* **[Ejercicio 1 DOM](./Tarea4/EjercicioDOM1.html)**
+* **[Ejercicio 2 DOM](./Tarea4/EjercicioDOM2.html)**
+* **[Ejercicio 3 DOM](./Tarea4/Ejercicio3DOM.html)**
 
 ---
 
