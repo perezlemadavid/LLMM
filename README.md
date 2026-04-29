@@ -98,26 +98,26 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 ##  Tarea 5: Definición y Consulta de Datos
 *Bloque avanzado dividido en 5 categorías sobre validación, consulta y transformación de datos.*
 
-### 📂 [DTD](./Tarea5/DTD/) (3 ejercicios)
-* **[Ejercicio 1](./Tarea5/DTD/ejercicio1_daw.xml)**: **Módulos DAW.** Definición de la estructura del ciclo mediante un archivo DTD externo.
-* **[Ejercicio 2](./Tarea5/DTD/alumnos.xml)**: **Registro Académico.** Uso de ID e IDREF para vincular alumnos con sus expedientes.
-* **[Ejercicio 3](./Tarea5/DTD/pedidos.xml)**: **Gestión Comercial.** Validación de facturas y pedidos mediante entidades y atributos NMTOKEN.
+###  [DTD](./Tarea5/DTD/) (3 ejercicios)
+* **[Ejercicio 1](./Tarea5/DTD/ejercicio1)**: **Módulos DAW.** Definición de la estructura del ciclo mediante un archivo DTD externo.
+* **[Ejercicio 2](./Tarea5/DTD/ejercicio2)**: **Registro Académico.** Uso de ID e IDREF para vincular alumnos con sus expedientes.
+* **[Ejercicio 3](./Tarea5/DTD/ejercicio3)**: **Gestión Comercial.** Validación de facturas y pedidos mediante entidades y atributos NMTOKEN.
 
-### 📂 [XSD](./Tarea5/XSD/) (3 ejercicios)
-* **[Ejercicio 1](./Tarea5/XSD/modulos_daw.xml)**: **Migración DAW.** Transformación del modelo de módulos a un esquema XML (XSD) con tipos de datos definidos.
-* **[Ejercicio 2](./Tarea5/XSD/ejercicio2.xml)**: **Esquema de Inventario.** Validación simple de elementos de stock y cantidades numéricas.
-* **[Ejercicio 3](./Tarea5/XSD/tabla_periodica.xml)**: **Tabla Periódica.** Restricciones complejas (facetas) para símbolos químicos, números atómicos y unidades de medida.
+###  [XSD](./Tarea5/XSD/) (3 ejercicios)
+* **[Ejercicio 1](./Tarea5/XSD/ejercicio1)**: **Migración DAW.** Transformación del modelo de módulos a un esquema XML (XSD) con tipos de datos definidos.
+* **[Ejercicio 2](./Tarea5/XSD/ejercicio2)**: **Esquema de Inventario.** Validación simple de elementos de stock y cantidades numéricas.
+* **[Ejercicio 3](./Tarea5/XSD/ejercicio3)**: **Tabla Periódica.** Restricciones complejas (facetas) para símbolos químicos, números atómicos y unidades de medida.
 
-### 📂 [XPath](./Tarea5/XPath/) (3 ejercicios)
-* **[Ejercicio 1](./Tarea5/XPath/ejercicio1_xpath.html)**: **Consultas IES.** Interfaz interactiva para extraer información sobre ciclos y decretos de título.
-* **[Ejercicio 2](./Tarea5/XPath/ejercicio2_xpath.html)**: **Filtros de Módulos.** Localización de datos basada en horas semanales y cursos académicos.
-* **[Ejercicio 3](./Tarea5/XPath/ejercicio3_xpath.html)**: **Anidación Avanzada.** Consultas que relacionan múltiples nodos mediante filtros de ID cruzados.
+###  [XPath](./Tarea5/XPath/) (3 ejercicios)
+* **[Ejercicio 1](./Tarea5/XPath/ejercicio1.html)**: **Consultas IES.** Interfaz interactiva para extraer información sobre ciclos y decretos de título.
+* **[Ejercicio 2](./Tarea5/XPath/ejercicio2.html)**: **Filtros de Módulos.** Localización de datos basada en horas semanales y cursos académicos.
+* **[Ejercicio 3](./Tarea5/XPath/ejercicio3.html)**: **Anidación Avanzada.** Consultas que relacionan múltiples nodos mediante filtros de ID cruzados.
 
-### 📂 [XSLT](./Tarea5/XSLT/) (2 ejercicios)
+###  [XSLT](./Tarea5/XSLT/) (2 ejercicios)
 * **[Ejercicio Universidad](./Tarea5/XSLT/ejercicio_universidad.xml)**: **Transformación a Web.** Uso de plantillas XSL para generar listas y tablas automáticas a partir de datos universitarios.
 * **[Hoja de Estilo](./Tarea5/XSLT/universidad.xsl)**: Definición de la lógica de maquetación y diseño CSS para la transformación XML.
 
-### 📂 [RSS](./Tarea5/RSS/) (1 ejercicio)
+###  [RSS](./Tarea5/RSS/) (1 ejercicio)
 * **[Lector de Noticias](./Tarea5/RSS/index.html)**: **Sindicación de Contenidos.** Consumo de un feed XML externo mediante AJAX y renderizado dinámico de titulares en el navegador.
 
 ---
