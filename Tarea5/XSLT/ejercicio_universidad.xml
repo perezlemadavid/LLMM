@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="universidad.xsl"?>
+<universidad>
+    <carreras>
+        <carrera id="c01">
+            <nombre>I.T. Informática</nombre>
+            <plan>2003</plan>
+            <creditos>225</creditos>
+        </carrera>
+        <carrera id="c02">
+            <nombre>I.T. Telecomunicaciones</nombre>
+            <plan>2001</plan>
+            <creditos>240</creditos>
+        </carrera>
+    </carreras>
+    <asignaturas>
+        <asignatura id="a01">
+            <nombre>Programación I</nombre>
+            <creditos_teoricos>4</creditos_teoricos>
+            <creditos_practicos>2</creditos_practicos>
+        </asignatura>
+        <asignatura id="a02">
+            <nombre>Bases de Datos</nombre>
+            <creditos_teoricos>3</creditos_teoricos>
+            <creditos_practicos>3</creditos_practicos>
+        </asignatura>
+    </asignaturas>
+    <alumnos>
+        <alumno>
+            <nombre>Juan</nombre>
+            <apellido1>García</apellido1>
+            <apellido2>Pérez</apellido2>
+        </alumno>
+        <alumno>
+            <nombre>María</nombre>
+            <apellido1>López</apellido1>
+            <apellido2>Sanz</apellido2>
+        </alumno>
+    </alumnos>
+</universidad>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE test SYSTEM "preguntas.dtd">
+<test>
+    <question id="1"><wording>What is the longest river in the world?</wording><choices><choice correct="yes">Amazon</choice><choice>Nile</choice><choice>Mississippi</choice><choice>Yangtze</choice></choices></question>
+    <question id="2"><wording>In which year did man first land on the Moon?</wording><choices><choice>1965</choice><choice correct="yes">1969</choice><choice>1972</choice><choice>1959</choice></choices></question>
+    <question id="3"><wording>Who painted the 'Mona Lisa'?</wording><choices><choice>Picasso</choice><choice>Van Gogh</choice><choice correct="yes">Leonardo da Vinci</choice><choice>Dali</choice></choices></question>
+    <question id="4"><wording>What is the largest country in the world by area?</wording><choices><choice>China</choice><choice>Canada</choice><choice correct="yes">Russia</choice><choice>USA</choice></choices></question>
+    <question id="5"><wording>Which organ in the human body consumes the most energy?</wording><choices><choice>Heart</choice><choice correct="yes">Brain</choice><choice>Liver</choice><choice>Muscles</choice></choices></question>
+    <question id="6"><wording>In which country is the Eiffel Tower located?</wording><choices><choice correct="yes">France</choice><choice>Italy</choice><choice>Spain</choice><choice>Germany</choice></choices></question>
+    <question id="7"><wording>What is the largest ocean on Earth?</wording><choices><choice>Atlantic</choice><choice>Indian</choice><choice correct="yes">Pacific</choice><choice>Arctic</choice></choices></question>
+    <question id="8"><wording>Which gas do we need to breathe to survive?</wording><choices><choice>Nitrogen</choice><choice>Hydrogen</choice><choice correct="yes">Oxygen</choice><choice>Carbon Dioxide</choice></choices></question>
+    <question id="9"><wording>Who wrote 'Don Quixote'?</wording><choices><choice>Lope de Vega</choice><choice correct="yes">Miguel de Cervantes</choice><choice>Quevedo</choice><choice>Gabriel Garcia Marquez</choice></choices></question>
+    <question id="10"><wording>What is the most expensive metal in the world?</wording><choices><choice>Gold</choice><choice>Platinum</choice><choice correct="yes">Rhodium</choice><choice>Copper</choice></choices></question>
+    <question id="11"><wording>What is the capital of Italy?</wording><choices><choice>Milan</choice><choice>Venice</choice><choice correct="yes">Rome</choice><choice>Florence</choice></choices></question>
+    <question id="12"><wording>How many bones does an adult human body have?</wording><choices><choice>210</choice><choice correct="yes">206</choice><choice>195</choice><choice>220</choice></choices></question>
+    <question id="13"><wording>Which planet is closest to the Sun?</wording><choices><choice>Venus</choice><choice>Mars</choice><choice correct="yes">Mercury</choice><choice>Earth</choice></choices></question>
+    <question id="14"><wording>On which continent is Egypt located?</wording><choices><choice>Asia</choice><choice correct="yes">Africa</choice><choice>Europe</choice><choice>Oceania</choice></choices></question>
+    <question id="15"><wording>What type of animal is a whale?</wording><choices><choice>Fish</choice><choice correct="yes">Mammal</choice><choice>Reptile</choice><choice>Amphibian</choice></choices></question>
+    <question id="16"><wording>What is the most spoken language in the world?</wording><choices><choice>Spanish</choice><choice>English</choice><choice correct="yes">Mandarin Chinese</choice><choice>French</choice></choices></question>
+    <question id="17"><wording>What is the chemical symbol for Gold?</wording><choices><choice>Ag</choice><choice>Fe</choice><choice correct="yes">Au</choice><choice>Pb</choice></choices></question>
+    <question id="18"><wording>Who was the first President of the United States?</wording><choices><choice>Lincoln</choice><choice>Jefferson</choice><choice correct="yes">George Washington</choice><choice>Roosevelt</choice></choices></question>
+    <question id="19"><wording>What is the highest mountain in the world?</wording><choices><choice>K2</choice><choice correct="yes">Everest</choice><choice>Mont Blanc</choice><choice>Kilimanjaro</choice></choices></question>
+    <question id="20"><wording>What was Mozart's primary instrument?</wording><choices><choice>Violin</choice><choice correct="yes">Piano</choice><choice>Flute</choice><choice>Guitar</choice></choices></question>
+</test>

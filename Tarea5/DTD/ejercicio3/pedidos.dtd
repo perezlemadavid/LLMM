@@ -1,0 +1,29 @@
+<!ELEMENT pedidos (pedido+)>
+<!ELEMENT pedido ((empresa | persona), producto+, fecha, factura?)>
+
+<!ELEMENT empresa (#PCDATA)>
+<!ATTLIST empresa 
+    CIF ID #REQUIRED
+    sector NMTOKEN #IMPLIED
+    actividad NMTOKENS #IMPLIED>
+
+<!ELEMENT persona (#PCDATA)>
+<!ATTLIST persona 
+    NIF ID #REQUIRED>
+
+<!ELEMENT producto (#PCDATA)>
+<!ATTLIST producto 
+    id_prod ID #REQUIRED>
+
+<!ELEMENT fecha (#PCDATA)>
+
+<!ELEMENT factura (emisor, total, fecha)>
+<!ATTLIST factura 
+    numfactura ID #REQUIRED
+    cliente IDREF #REQUIRED
+    productos IDREFS #REQUIRED>
+
+<!ELEMENT emisor (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
+
+<!ENTITY MiEmpresa "Esta es mi Empresa">

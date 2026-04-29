@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones XPath - Ejercicio 1</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .pregunta {
+            background: #eef7ff;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 0 8px 8px 0;
+        }
+        .pregunta:hover { background: #ddecff; }
+        .respuesta {
+            display: none;
+            background: #273036;
+            color: #f8f8f2;
+            padding: 12px;
+            font-family: 'Consolas', monospace;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+        .instrucciones { font-size: 0.9em; color: #666; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>XPath: Ejercicio 1 (IES Abastos)</h1>
+    <p class="instrucciones">Haz clic en cada pregunta para ver la expresión XPath correspondiente:</p>
+
+    <div class="pregunta" onclick="toggle(this)">
+        1. Nombre del Instituto
+        <div class="respuesta">/ies/nombre</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        2. Página web del Instituto
+        <div class="respuesta">/ies/web/text()</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        3. Nombre de los Ciclos Formativos
+        <div class="respuesta">/ies/ciclos/ciclo/nombre/text()</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        4. Siglas de los Ciclos Formativos (Atributo id)
+        <div class="respuesta">/ies/ciclos/ciclo/@id</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        5. Años de publicación de los decretos
+        <div class="respuesta">/ies/ciclos/ciclo/decretoTitulo/@año</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        6. Ciclos Formativos de Grado Medio (Elemento completo)
+        <div class="respuesta">/ies/ciclos/ciclo[grado='Medio']</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        7. Nombre de los Ciclos de Grado Superior
+        <div class="respuesta">/ies/ciclos/ciclo[grado='Superior']/nombre</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        8. Nombre de los Ciclos anteriores a 2010
+        <div class="respuesta">/ies/ciclos/ciclo[decretoTitulo/@año < 2010]/nombre/text()</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        9. Nombre de los Ciclos de 2008 o 2010
+        <div class="respuesta">/ies/ciclos/ciclo[decretoTitulo/@año=2008 or decretoTitulo/@año=2010]/nombre/text()</div>
+    </div>
+</div>
+
+<script>
+    function toggle(elemento) {
+        const respuesta = elemento.querySelector('.respuesta');
+        if (respuesta.style.display === "block") {
+            respuesta.style.display = "none";
+        } else {
+            respuesta.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

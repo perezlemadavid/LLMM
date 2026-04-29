@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedidos SYSTEM "pedidos.dtd">
+<pedidos>
+  
+  <pedido>
+    <empresa CIF="B12345678" sector="Tecnologia" actividad="Informatica Desarrollo_Web Consultoria">
+        Tech Solutions S.L.
+    </empresa>
+    
+    <producto id_prod="P01">Monitor 24 pulgadas</producto>
+    <producto id_prod="P02">Teclado Mecánico</producto>
+    
+    <fecha>2026-04-20</fecha>
+    
+    <factura numfactura="F2026_01" cliente="B12345678" productos="P01 P02">
+      <emisor>&MiEmpresa;</emisor>
+      <total>350.50</total>
+      <fecha>2026-04-21</fecha>
+    </factura>
+  </pedido>
+
+  <pedido>
+    <persona NIF="12345678Z">Juan Pérez</persona>
+    <producto id_prod="P03">Ratón Inalámbrico</producto>
+    <fecha>2026-04-25</fecha>
+  </pedido>
+
+</pedidos>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones XPath - Ejercicio 3</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 850px;
+            width: 100%;
+        }
+        h1 { color: #2c3e50; border-bottom: 3px solid #e67e22; padding-bottom: 10px; text-align: center; }
+        .instrucciones { font-size: 0.95em; color: #7f8c8d; margin-bottom: 20px; font-style: italic; text-align: center; }
+        
+        .pregunta {
+            background: #f8f9fa;
+            border-left: 5px solid #e67e22;
+            padding: 15px;
+            margin: 12px 0;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-radius: 0 8px 8px 0;
+            font-weight: 500;
+        }
+        .pregunta:hover {
+            background: #fff3e0;
+            transform: translateX(5px);
+        }
+        .respuesta {
+            display: none;
+            background: #282c34;
+            color: #61afef;
+            padding: 15px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            border: 1px solid #181a1f;
+            overflow-x: auto;
+        }
+        .respuesta span { color: #98c379; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>XPath: Ejercicio 3 (Consultas Anidadas)</h1>
+    <p class="instrucciones">Haz clic en cada enunciado para ver la expresión XPath (consultas que relacionan elementos).</p>
+
+    <div class="pregunta" onclick="toggle(this)">
+        1. Módulos del ciclo "Sistemas Microinformáticos y Redes" (sin usar siglas SMR)
+        <div class="respuesta">//modulo[ciclo = //ciclo[nombre=<span>'Sistemas Microinformáticos y Redes'</span>]/@id]/nombre/text()</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        2. Ciclos que incluyen el módulo "Lenguajes de marcas..."
+        <div class="respuesta">//ciclo[@id = //modulo[nombre=<span>'Lenguajes de marcas y sistemas de gestión de información'</span>]/ciclo]/nombre/text()</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        3. Nombre de los módulos de ciclos de Grado Superior
+        <div class="respuesta">//modulo[ciclo = //ciclo[grado=<span>'Superior'</span>]/@id]/nombre/text()</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        4. Módulos de ciclos cuyo título se aprobó en 2008
+        <div class="respuesta">//modulo[ciclo = //ciclo[decretoTitulo/@año=2008]/@id]/nombre/text()</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        5. Grado de los ciclos con módulos de primer curso
+        <div class="respuesta">//ciclo[@id = //modulo[curso=1]/ciclo]/grado/text()</div>
+    </div>
+
+</div>
+
+<script>
+    function toggle(elemento) {
+        const respuesta = elemento.querySelector('.respuesta');
+        if (respuesta.style.display === "block") {
+            respuesta.style.display = "none";
+        } else {
+            document.querySelectorAll('.respuesta').forEach(r => r.style.display = 'none');
+            respuesta.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

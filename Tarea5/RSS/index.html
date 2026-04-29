@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lector RSS con AJAX</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #c0392b; border-bottom: 2px solid #c0392b; padding-bottom: 10px; }
+        .noticia {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .noticia h3 { margin: 10px 0 5px 0; color: #2c3e50; }
+        .noticia p { color: #7f8c8d; font-size: 0.95em; }
+        .noticia a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+        .noticia a:hover { text-decoration: underline; }
+        #loading { color: #7f8c8d; font-style: italic; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Últimas Noticias (RSS)</h1>
+    <div id="loading">Cargando noticias...</div>
+    <div id="contenido-rss"></div>
+</div>
+
+<script>
+    // URL del RSS de El País (Titulares de Portada)
+    const RSS_URL = `https://elpais.com/rss/elpais/portada.xml`;
+    
+    // Usamos un proxy gratuito para evitar problemas de CORS en navegadores
+    const PROXY_URL = `https://api.allorigins.win/get?url=${encodeURIComponent(RSS_URL)}`;
+
+    async function cargarRSS() {
+        try {
+            const respuesta = await fetch(PROXY_URL);
+            const datos = await respuesta.json();
+            
+            // Convertimos la cadena de texto XML en un objeto DOM
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(datos.contents, "text/xml");
+            
+            const items = xmlDoc.querySelectorAll("item");
+            let htmlBusca = "";
+
+            // Recorremos los primeros 10 elementos del RSS
+            items.forEach((item, index) => {
+                if(index < 10) {
+                    const titulo = item.querySelector("title").textContent;
+                    const link = item.querySelector("link").textContent;
+                    const descripcion = item.querySelector("description") ? item.querySelector("description").textContent : "Sin descripción disponible";
+                    
+                    htmlBusca += `
+                        <div class="noticia">
+                            <h3>${titulo}</h3>
+                            <p>${descripcion.substring(0, 150)}...</p>
+                            <a href="${link}" target="_blank">Leer noticia completa →</a>
+                        </div>
+                    `;
+                }
+            });
+
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('contenido-rss').innerHTML = htmlBusca;
+
+        } catch (error) {
+            console.error("Error al cargar el RSS:", error);
+            document.getElementById('loading').innerText = "Error al cargar las noticias. Inténtalo de nuevo más tarde.";
+        }
+    }
+
+    // Ejecutamos la función al cargar la página
+    cargarRSS();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones XPath - Ejercicio 2</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 850px;
+            width: 100%;
+        }
+        h1 { color: #2c3e50; border-bottom: 3px solid #16a085; padding-bottom: 10px; text-align: center; }
+        .instrucciones { font-size: 0.95em; color: #7f8c8d; margin-bottom: 20px; font-style: italic; text-align: center; }
+        
+        .pregunta {
+            background: #f8f9fa;
+            border-left: 5px solid #16a085;
+            padding: 15px;
+            margin: 12px 0;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-radius: 0 8px 8px 0;
+            font-weight: 500;
+        }
+        .pregunta:hover {
+            background: #e8f8f5;
+            transform: translateX(5px);
+        }
+        .respuesta {
+            display: none;
+            background: #282c34;
+            color: #61afef;
+            padding: 15px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-size: 0.95em;
+            border: 1px solid #181a1f;
+            overflow-x: auto;
+        }
+        .respuesta span { color: #98c379; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>XPath: Ejercicio 2 (Módulos)</h1>
+    <p class="instrucciones">Haz clic en cada enunciado para ver la expresión XPath correspondiente.</p>
+
+    <div class="pregunta" onclick="toggle(this)">
+        1. Nombre de los módulos que se imparten en el Instituto
+        <div class="respuesta">//modulo/nombre/text()</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        2. Nombre de los módulos del ciclo ASIR
+        <div class="respuesta">//modulo[ciclo=<span>'ASIR'</span>]/nombre/text()</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        3. Nombre de los módulos de segundo curso de cualquier ciclo
+        <div class="respuesta">//modulo[curso=2]/nombre/text()</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        4. Nombre de los módulos de menos de 5 horas semanales
+        <div class="respuesta">//modulo[horasSemanales &lt; 5]/nombre/text()</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        5. Nombre de los módulos del primer curso de ASIR
+        <div class="respuesta">//modulo[curso=1 and ciclo=<span>'ASIR'</span>]/nombre/text()</div>
+    </div>
+
+    <div class="pregunta" onclick="toggle(this)">
+        6. Horas semanales de los módulos de más de 3 horas semanales
+        <div class="respuesta">//modulo[horasSemanales > 3]/horasSemanales/text()</div>
+    </div>
+
+</div>
+
+<script>
+    function toggle(elemento) {
+        const respuesta = elemento.querySelector('.respuesta');
+        if (respuesta.style.display === "block") {
+            respuesta.style.display = "none";
+        } else {
+            document.querySelectorAll('.respuesta').forEach(r => r.style.display = 'none');
+            respuesta.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

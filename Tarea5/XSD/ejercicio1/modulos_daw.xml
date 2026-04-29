@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="modulos_daw.xsd">
+  <modulo>
+    <nombre>Base de datos</nombre>
+    <descripcion>Diseño y administración de BD</descripcion>
+    <codigo>BD01</codigo>
+    <profesor>Eduardo</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2025</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2026</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>Programacion</nombre>
+    <descripcion>Desarrollo de aplicaciones</descripcion>
+    <codigo>PROG02</codigo>
+    <profesor>Toñi</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2025</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2026</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>LLMM</nombre>
+    <descripcion>Lenguajes de marcas</descripcion>
+    <codigo>LM03</codigo>
+    <profesor>Ignacio</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2025</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2026</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>Entornos de desarrollo</nombre>
+    <descripcion>Herramientas de software</descripcion>
+    <codigo>ED04</codigo>
+    <profesor>Juanma</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2025</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2026</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>Digitalizacion</nombre>
+    <descripcion>Tecnologías digitales</descripcion>
+    <codigo>DIG05</codigo>
+    <profesor>Juanma</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2025</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2026</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>Sostenibilidad</nombre>
+    <descripcion>Impacto ambiental</descripcion>
+    <codigo>SOS06</codigo>
+    <profesor>Rosa</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2025</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2026</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>Sistemas informaticos</nombre>
+    <descripcion>Hardware y redes</descripcion>
+    <codigo>SI07</codigo>
+    <profesor>Juanmi</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2025</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2026</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>Itinerario personal 1 (IP1)</nombre>
+    <descripcion>Orientación laboral</descripcion>
+    <codigo>IP1</codigo>
+    <profesor>Pendiente</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2025</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2026</año></fin>
+    </fechas>
+  </modulo>
+</modulos>

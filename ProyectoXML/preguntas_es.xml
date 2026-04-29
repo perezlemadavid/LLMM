@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE test SYSTEM "preguntas.dtd">
+<test>
+    <question id="1"><wording>¿Cuál es el río más largo del mundo?</wording><choices><choice correct="yes">Amazonas</choice><choice>Nilo</choice><choice>Misisipi</choice><choice>Yangtsé</choice></choices></question>
+    <question id="2"><wording>¿En qué año llegó el hombre a la Luna?</wording><choices><choice>1965</choice><choice correct="yes">1969</choice><choice>1972</choice><choice>1959</choice></choices></question>
+    <question id="3"><wording>¿Quién pintó la 'Mona Lisa'?</wording><choices><choice>Picasso</choice><choice>Van Gogh</choice><choice correct="yes">Leonardo da Vinci</choice><choice>Dalí</choice></choices></question>
+    <question id="4"><wording>¿Cuál es el país más grande del mundo?</wording><choices><choice>China</choice><choice>Canadá</choice><choice correct="yes">Rusia</choice><choice>Estados Unidos</choice></choices></question>
+    <question id="5"><wording>¿Qué órgano del cuerpo humano consume más energía?</wording><choices><choice>Corazón</choice><choice correct="yes">Cerebro</choice><choice>Hígado</choice><choice>Músculos</choice></choices></question>
+    <question id="6"><wording>¿En qué país se encuentra la Torre Eiffel?</wording><choices><choice correct="yes">Francia</choice><choice>Italia</choice><choice>España</choice><choice>Alemania</choice></choices></question>
+    <question id="7"><wording>¿Cuál es el océano más grande?</wording><choices><choice>Atlántico</choice><choice>Índico</choice><choice correct="yes">Pacífico</choice><choice>Ártico</choice></choices></question>
+    <question id="8"><wording>¿Qué gas necesitamos para respirar?</wording><choices><choice>Nitrógeno</choice><choice>Hidrógeno</choice><choice correct="yes">Oxígeno</choice><choice>Dióxido de carbono</choice></choices></question>
+    <question id="9"><wording>¿Quién escribió 'Don Quijote de la Mancha'?</wording><choices><choice>Lope de Vega</choice><choice correct="yes">Miguel de Cervantes</choice><choice>Quevedo</choice><choice>García Márquez</choice></choices></question>
+    <question id="10"><wording>¿Cuál es el metal más caro del mundo?</wording><choices><choice>Oro</choice><choice>Platino</choice><choice correct="yes">Rodio</choice><choice>Cobre</choice></choices></question>
+    <question id="11"><wording>¿Cuál es la capital de Italia?</wording><choices><choice>Milán</choice><choice>Venecia</choice><choice correct="yes">Roma</choice><choice>Florencia</choice></choices></question>
+    <question id="12"><wording>¿Cuántos huesos tiene el cuerpo humano adulto?</wording><choices><choice>210</choice><choice correct="yes">206</choice><choice>195</choice><choice>220</choice></choices></question>
+    <question id="13"><wording>¿Cuál es el planeta más cercano al Sol?</wording><choices><choice>Venus</choice><choice>Marte</choice><choice correct="yes">Mercurio</choice><choice>Tierra</choice></choices></question>
+    <question id="14"><wording>¿En qué continente está Egipto?</wording><choices><choice>Asia</choice><choice correct="yes">África</choice><choice>Europa</choice><choice>Oceanía</choice></choices></question>
+    <question id="15"><wording>¿Qué tipo de animal es la ballena?</wording><choices><choice>Pez</choice><choice correct="yes">Mamífero</choice><choice>Reptil</choice><choice>Anfibio</choice></choices></question>
+    <question id="16"><wording>¿Cuál es el idioma más hablado del mundo?</wording><choices><choice>Español</choice><choice>Inglés</choice><choice correct="yes">Chino mandarín</choice><choice>Francés</choice></choices></question>
+    <question id="17"><wording>¿Cuál es el símbolo químico del oro?</wording><choices><choice>Ag</choice><choice>Fe</choice><choice correct="yes">Au</choice><choice>Pb</choice></choices></question>
+    <question id="18"><wording>¿Quién fue el primer presidente de Estados Unidos?</wording><choices><choice>Lincoln</choice><choice>Jefferson</choice><choice correct="yes">George Washington</choice><choice>Roosevelt</choice></choices></question>
+    <question id="19"><wording>¿Cuál es el monte más alto del mundo?</wording><choices><choice>K2</choice><choice correct="yes">Everest</choice><choice>Teide</choice><choice>Kilimanjaro</choice></choices></question>
+    <question id="20"><wording>¿Cuál es el instrumento principal de Mozart?</wording><choices><choice>Violín</choice><choice correct="yes">Piano</choice><choice>Flauta</choice><choice>Guitarra</choice></choices></question>
+</test>

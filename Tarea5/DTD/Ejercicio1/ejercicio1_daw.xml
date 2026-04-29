@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE modulos SYSTEM "ejercicio1_daw.dtd">
+<modulos>
+  <modulo>
+    <nombre>Base de Datos</nombre>
+    <descripcion>Diseño y administración de bases de datos relacionales.</descripcion>
+    <codigo>BBDD01</codigo>
+    <profesor>Eduardo</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2023</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2024</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>Programacion</nombre>
+    <descripcion>Desarrollo de aplicaciones y lógica de programación.</descripcion>
+    <codigo>PROG02</codigo>
+    <profesor>Toñi</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2023</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2024</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>Lenguajes de Marcas (LLMM)</nombre>
+    <descripcion>Creación de documentos XML, HTML y CSS.</descripcion>
+    <codigo>LLMM03</codigo>
+    <profesor>Ignacio</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2023</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2024</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>Entornos de Desarrollo</nombre>
+    <descripcion>Herramientas y ciclos de vida del software.</descripcion>
+    <codigo>ED04</codigo>
+    <profesor>Juanma</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2023</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2024</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>Digitalizacion</nombre>
+    <descripcion>Transformación digital en entornos productivos.</descripcion>
+    <codigo>DIG05</codigo>
+    <profesor>Juanma</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2023</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2024</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>Sostenibilidad</nombre>
+    <descripcion>Principios de economía circular y medio ambiente.</descripcion>
+    <codigo>SOST06</codigo>
+    <profesor>Rosa</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2023</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2024</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>Sistemas Informaticos</nombre>
+    <descripcion>Configuración y explotación de sistemas.</descripcion>
+    <codigo>SIST07</codigo>
+    <profesor>Juanmi</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2023</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2024</año></fin>
+    </fechas>
+  </modulo>
+  <modulo>
+    <nombre>Itinerario Personal para la Empleabilidad 1 (IP1)</nombre>
+    <descripcion>Orientación laboral y formación profesional.</descripcion>
+    <codigo>IP108</codigo>
+    <profesor>Pendiente</profesor>
+    <fechas>
+      <inicio><dia>20</dia><mes>09</mes><año>2023</año></inicio>
+      <fin><dia>01</dia><mes>06</mes><año>2024</año></fin>
+    </fechas>
+  </modulo>
+</modulos>

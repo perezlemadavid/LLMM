@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instituto SYSTEM "alumnos.dtd">
+<instituto>
+  
+  <alumno num_alumno="A001" sexo="hombre">
+    <nombre>Marcos</nombre>
+    <apellidos>García Pérez</apellidos>
+    <domicilio>Calle Mayor 15</domicilio>
+    <telefono tipo="propio">600111222</telefono>
+    <telefono tipo="padre">600333444</telefono>
+    <equipo>Baloncesto</equipo>
+    <aficiones>Lectura</aficiones>
+    <origen>
+      <provincia>Madrid</provincia>
+    </origen>
+    <comentarios>Alumno muy participativo.</comentarios>
+    <notas>
+      <evaluacion>Primera</evaluacion>
+      <calificacion>8</calificacion>
+    </notas>
+    <altura>180</altura>
+  </alumno>
+
+  <alumno num_alumno="A002" sexo="mujer" ayudado_por="A001">
+    <nombre>Lucía</nombre>
+    <apellidos>Sánchez Ruiz</apellidos>
+    <domicilio>Avenida Libertad 4</domicilio>
+    <telefono tipo="tutor">655777888</telefono>
+    <aficiones>Pintura</aficiones>
+    <aficiones>Ciclismo</aficiones>
+    <origen>
+      <pais>Francia</pais>
+    </origen>
+    <notas>
+      <evaluacion>Primera</evaluacion>
+      <calificacion>9</calificacion>
+    </notas>
+  </alumno>
+
+</instituto>

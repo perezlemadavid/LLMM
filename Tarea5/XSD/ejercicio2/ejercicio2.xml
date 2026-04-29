@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="ejercicio2.xsd">
+  <objeto>
+    <nombre>Teclado Mecánico</nombre>
+    <cantidad>15</cantidad>
+    <categoria>Periféricos</categoria>
+  </objeto>
+  <objeto>
+    <nombre>Monitor 27 Pulgadas</nombre>
+    <cantidad>5</cantidad>
+    <categoria>Pantallas</categoria>
+  </objeto>
+</inventario>
