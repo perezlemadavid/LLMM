@@ -95,6 +95,26 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 
 ---
 
+##  Tarea 5: Definición y Consulta de Datos (DTD, XSD, XPath, XSLT y RSS)
+*Bloque avanzado sobre validación, transformación y consulta de documentos XML y sindicación de contenidos.*
+
+#### Validación de Estructuras (DTD y XSD)
+* **[Ejercicio 1 (DTD/XSD)](./Tarea5/DTD/ejercicio1_daw.xml)**: **Módulos DAW.** Definición de los módulos del ciclo con sus profesores (Eduardo, Toñi, etc.) y fechas de curso mediante reglas DTD y su posterior migración a XML Schema (XSD).
+* **[Ejercicio 2 (DTD)](./Tarea5/DTD/alumnos.xml)**: **Registro de Alumnos.** Uso de atributos `ID` e `IDREF` para relacionar alumnos y validación de datos personales y académicos.
+* **[Ejercicio 3 (DTD)](./Tarea5/DTD/pedidos.xml)**: **Gestión de Pedidos.** Implementación de entidades, atributos `NMTOKEN` para sectores profesionales y referencias múltiples de productos en facturas.
+* **[Ejercicio 2 (XSD)](./Tarea5/XSD/ejercicio2.xml)**: **Inventario Simple.** Práctica de restricciones básicas de tipos de datos (strings e integers) y secuencias de elementos.
+* **[Ejercicio 3 (XSD)](./Tarea5/XSD/tabla_periodica.xml)**: **Tabla Periódica.** Validación avanzada con facetas: control de longitud de caracteres, patrones de mayúsculas (Regex), rangos numéricos para números atómicos y atributos con valores por defecto.
+
+#### Consultas e Interactividad (XPath)
+* **[XPath 1](./Tarea5/XPath/ejercicio1_xpath.html)**: **Buscador IES Abastos.** Interfaz interactiva para ejecutar consultas sobre la estructura del instituto, ciclos de grado medio/superior y años de decreto.
+* **[XPath 2](./Tarea5/XPath/ejercicio2_xpath.html)**: **Filtros de Módulos.** Consultas dinámicas sobre horas semanales, cursos específicos y filtrado de módulos por siglas de ciclo.
+* **[XPath 3](./Tarea5/XPath/ejercicio3_xpath.html)**: **Consultas Anidadas.** Relación compleja entre elementos mediante el cruce de IDs de ciclos y módulos (consultas de "doble filtro").
+
+#### Transformación y Sindicación (XSLT y RSS)
+* **[XSLT Universidad](./Tarea5/XSLT/ejercicio_universidad.xml)**: **Maquetación de Datos.** Transformación de un XML universitario en una página web visual con tablas de créditos, listas de carreras y asignaturas mediante hojas de estilo XSL.
+* **[Lector RSS](./Tarea5/RSS/index.html)**: **Noticias en Tiempo Real.** Implementación de un lector de noticias dinámico que consume el feed de "El País" mediante AJAX y procesa el XML para mostrar titulares y descripciones.
+
+---
 ##  Proyectos Principales
 
 | Proyecto | Descripción | Enlace |
