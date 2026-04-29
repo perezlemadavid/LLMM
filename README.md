@@ -109,9 +109,9 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 * **[Ejercicio 3](./Tarea5/XSD/ejercicio3)**: **Tabla Periódica.** Restricciones complejas (facetas) para símbolos químicos, números atómicos y unidades de medida.
 
 ###  [XPath](./Tarea5/XPath/) (3 ejercicios)
-* **[Ejercicio 1](./Tarea5/XPath/ejercicio1.html)**: **Consultas IES.** Interfaz interactiva para extraer información sobre ciclos y decretos de título.
-* **[Ejercicio 2](./Tarea5/XPath/ejercicio2.html)**: **Filtros de Módulos.** Localización de datos basada en horas semanales y cursos académicos.
-* **[Ejercicio 3](./Tarea5/XPath/ejercicio3.html)**: **Anidación Avanzada.** Consultas que relacionan múltiples nodos mediante filtros de ID cruzados.
+* **[Ejercicio 1](./Tarea5/XPath/Ejercicio1.html)**: **Consultas IES.** Interfaz interactiva para extraer información sobre ciclos y decretos de título.
+* **[Ejercicio 2](./Tarea5/XPath/Ejercicio2.html)**: **Filtros de Módulos.** Localización de datos basada en horas semanales y cursos académicos.
+* **[Ejercicio 3](./Tarea5/XPath/Ejercicio3.html)**: **Anidación Avanzada.** Consultas que relacionan múltiples nodos mediante filtros de ID cruzados.
 
 ###  [XSLT](./Tarea5/XSLT/) (2 ejercicios)
 * **[Ejercicio Universidad](./Tarea5/XSLT/ejercicio_universidad.xml)**: **Transformación a Web.** Uso de plantillas XSL para generar listas y tablas automáticas a partir de datos universitarios.
