@@ -99,7 +99,7 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 *Bloque avanzado dividido en 5 categorías sobre validación, consulta y transformación de datos.*
 
 ###  [DTD](./Tarea5/DTD/) (3 ejercicios)
-* **[Ejercicio 1](./Tarea5/DTD/ejercicio1)**: **Módulos DAW.** Definición de la estructura del ciclo mediante un archivo DTD externo.
+* **[Ejercicio 1](./Tarea5/DTD/Ejercicio1)**: **Módulos DAW.** Definición de la estructura del ciclo mediante un archivo DTD externo.
 * **[Ejercicio 2](./Tarea5/DTD/ejercicio2)**: **Registro Académico.** Uso de ID e IDREF para vincular alumnos con sus expedientes.
 * **[Ejercicio 3](./Tarea5/DTD/ejercicio3)**: **Gestión Comercial.** Validación de facturas y pedidos mediante entidades y atributos NMTOKEN.
 
