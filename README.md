@@ -121,12 +121,13 @@ Repositorio de actividades y proyectos del módulo de Lenguajes de Marcas. Desar
 * **[Lector de Noticias](./Tarea5/RSS/index.html)**: **Sindicación de Contenidos.** Consumo de un feed XML externo mediante AJAX y renderizado dinámico de titulares en el navegador.
 
 ---
-##  Proyectos Principales
+##  Proyectos Principales
 
 | Proyecto | Descripción | Enlace |
 | :--- | :--- | :---: |
 | **Web4U** | Proyecto web integral basado en los contenidos de la Unidad 4. | [Explorar](./Web4U) |
 | **Proyecto Bootstrap** | Maquetación responsiva avanzada utilizando el framework Bootstrap. | [Explorar](./ProyectoBootstrap) |
+| **Proyecto XML** | Aplicación bilingüe de cultura general con validación DTD y carga asíncrona de datos. | [Explorar](./ProyectoXML) |
 | **Página Desplegada:** | Ver proyecto subido | [Ver en GitHub Pages](https://perezlemadavid.github.io/LLMM/) |
 
 ---
